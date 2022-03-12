@@ -14,7 +14,7 @@ The following languages, platforms and technologies are included in the project:
 - Plain HTML and CSS
 - CSS Flexbox and CSS Grid
 - Responsive Design using media queries
-- Animations and transitions using CSS
+- Animations and transitions using CSS and AOS (https://michalsnik.github.io/aos/) library
 - Git and GitHub for version control
 
 Still to implement:
