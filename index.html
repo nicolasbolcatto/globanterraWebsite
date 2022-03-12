@@ -7,9 +7,14 @@
     <link rel="shortcut icon" href="assets/img/logo.png">
     <title>GlobanTerra</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
+    <script>
+        AOS.init();
+    </script>
     <div class="mainContainer">
         <!--Main container for grid template-->
         <header>
@@ -18,7 +23,7 @@
                 <img src="./assets/img/logo.png" alt="logo globanterra">
             </a>
             <a class="logoText" id="logo" href="./index.html">
-                <h1GlobanTerra</h1>
+                <h1>GlobanTerra</h1>
             </a>
         </header>
         <!--header ends-->
@@ -49,26 +54,26 @@
                 </div>
             </section>
             <section class="stats" id="statistics">
-                <div class="statBox">
+                <div class="statBox" data-aos="zoom-in" data-aos-duration="1000">
                     <h4>Horas de vuelo</h4>
                     <p>29</p>
                 </div>
-                <div class="statBox">
+                <div class="statBox" data-aos="zoom-in" data-aos-duration="1000">
                     <h4>Imágenes capturadas</h4>
                     <p>5.200</p>
                 </div>
-                <div class="statBox">
+                <div class="statBox" data-aos="zoom-in" data-aos-duration="1000">
                     <h4>Superficie relevada</h4>
                     <p>854.250 m<sup>2</sup>
                         <p>
                 </div>
-                <div class="statBox">
+                <div class="statBox" data-aos="zoom-in" data-aos-duration="1000">
                     <h4>Horas de procesamiento computacional</h4>
                     <p>32</p>
                 </div>
             </section>
             <section id="description">
-                <article class="container leftBorder" id="who">
+                <article class="container leftBorder" data-aos="fade-right" data-aos-duration="1200" id="who">
                     <div class="text">
                         <div class="fs4">
                             <h3>Quienes somos</h3>
@@ -86,7 +91,7 @@
 
                 </article>
 
-                <article class="container leftBorder" id="what">
+                <article class="container leftBorder" data-aos="fade-left" data-aos-duration="1200" id="what">
 
                     <div class="text">
                         <div class="fs4">
@@ -103,7 +108,7 @@
 
                 </article>
 
-                <article class="container leftBorder" id="how">
+                <article class="container leftBorder" data-aos="fade-right" data-aos-duration="1200" id="how">
 
                     <div class="text">
                         <div class="fs4">
