@@ -40,13 +40,12 @@ header {
 header .logoLink {
     display: block;
     margin: 1rem auto;
-    font-size: 2rem;
-    color: white;
     text-align: center;
+    width: fit-content;
 }
 
 header .logoLink img {
-    width: 200px;
+    width: 60%;
 }
 
 header .logoLink img:hover {
@@ -54,10 +53,8 @@ header .logoLink img:hover {
     transition: transform 2.5s;
 }
 
-
-
 header .logoText {
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: rgba(38, 89, 1, 0.75);
     text-decoration: none;
     text-align: center;
@@ -73,62 +70,29 @@ nav {
 }
 
 .navList {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "home" "services" "experiences" "team" "contact";
-    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
     list-style-type: none;
+    text-align: center;
 }
 
-.listItem {
-    margin: 1rem;
-    padding: 0.5rem;
-}
-
-#home {
-    grid-area: home;
-}
-
-#services {
-    grid-area: services;
-}
-
-#experiences {
-    grid-area: experiences;
-}
-
-#team {
-    grid-area: team;
-}
-
-#contact {
-    grid-area: contact;
-}
-
-.navList .listItem {
+.navList .link {
     padding: 2rem;
     margin: 2rem 0.5rem;
     border-radius: 1rem;
     background-color: rgba(38, 89, 1, 0.5);
-}
-
-.navList .link {
+    display: block;
     font-size: 2rem;
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
 
-.navList .listItem:hover {
+.navList .link:hover {
     background-color: rgb(0, 82, 153);
     cursor: pointer;
     transform: scale(105%);
     transition: transform 0.7s;
-}
-
-.navList .link:hover {
-    cursor: pointer;
 }
 
 
@@ -146,14 +110,13 @@ main {
 
 .gallery {
     position: relative;
-    width: 100%;
     height: auto;
     text-align: center;
 }
 
 .gallery img {
-    width: 100%;
     height: auto;
+    width: 100%;
 }
 
 .galleryText #sub0,
@@ -168,22 +131,22 @@ main {
 
 #sub0 {
     top: 12.5%;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 #sub1 {
     top: 55%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 #sub2 {
     top: 65%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 #sub3 {
     top: 75%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -240,7 +203,7 @@ main {
 
 .video {
     width: 90%;
-    height: 400px;
+    height: 300px;
     padding-bottom: 2rem;
 }
 
@@ -266,7 +229,7 @@ main {
     background-color: rgba(38, 89, 1, 0.5);
     text-align: center;
     width: auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     padding: 2rem;
 }
@@ -280,16 +243,17 @@ main {
 
 .containerService {
     margin: 2rem 2rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
     background-color: rgba(38, 89, 1, 0.25);
     border-radius: 5rem;
     box-shadow: 0.5rem 0.5rem rgba(38, 89, 1, 0.5);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 15% 35% 50%;
+    grid-template-rows: 150px 500px auto;
     grid-template-areas: "service-title" "service-logo" "service-text";
     justify-items: center;
     align-items: center;
+    height: auto;
 }
 
 .serviceTitle {
@@ -304,32 +268,28 @@ main {
 
 .serviceText {
     grid-area: service-text;
-    padding: 2rem 5rem;
+    padding: 1rem 1rem;
+    
 }
 
 .serviceText p {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
     line-height: 4rem;
 }
 
 .serviceText ul li {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: left;
     line-height: 3rem;
     list-style-position: inside;
 }
 
-.logo {
+.serviceLogo {
     grid-area: service-logo;
     width: 100%;
     text-align: center;
     padding: 3rem;
-}
-
-.logo img {
-    width: 80%;
-    height: auto;
 }
 
 #aerial {
@@ -489,6 +449,14 @@ footer {
     text-align: center;
 }
 
+.creds{
+    background-color:rgba(38, 89, 1, 0.75);
+}
+
+.creds a{
+    text-decoration: none;
+    color: white;
+}
 
 /*Media Queries*/
 
@@ -506,6 +474,7 @@ footer {
     }
     .navList {
         display: flex;
+        flex-flow: row nowrap   ;
         justify-content: center;
     }
     .stats {
@@ -530,6 +499,10 @@ footer {
     #sub3 {
         font-size: 3rem;
     }
+    .video{
+        height: 450px;
+    }
+
     .serviceText {
         grid-area: service-text;
         padding: 2rem;
@@ -549,12 +522,12 @@ footer {
         line-height: 3rem;
         list-style-position: inside;
     }
-    .logo {
+    .serviceLogo {
         grid-area: service-logo;
         width: 100%;
         text-align: center;
     }
-    .logo img {
+    .serviceLogo img {
         width: 100%;
         height: auto;
     }
@@ -600,10 +573,29 @@ footer {
 /*Breakpoint Mobile-Tablet*/
 
 @media only screen and (min-width: 768px) {
+    
+    .title{
+        font-size: 2rem;
+    }
     .services {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas: "aerial control" "topo inventory" "sig satellite";
+    }
+    .containerService{
+        grid-template-rows: 80px 400px auto;
+    }
+    .serviceTitle{
+        font-size: 4rem;
+    }
+
+    .serviceText p{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .serviceText ul li{
+        font-size: 2rem;
     }
 }
 
@@ -615,6 +607,25 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: "aerial control topo" "inventory sig satellite";
+    }
+    .containerService{
+        grid-template-rows: 150px 300px auto;
+    }
+    .serviceTitle{
+        font-size: 3rem;
+    }
+
+    .serviceLogo{
+        padding: 2rem;
+    }
+
+    .serviceText p{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .serviceText ul li{
+        font-size: 2rem;
     }
 }
 
