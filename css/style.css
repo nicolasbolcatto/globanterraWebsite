@@ -250,3 +250,40 @@ input[type="email"] {
         height: 70%;
     }
 }
+
+
+/*Animations*/
+
+@keyframes twist {
+    0% {
+        transform: rotate(45deg);
+    }
+    25% {
+        transform: rotate(-45deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    75% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+.socialNetLogo {
+    animation-name: twist;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes beat{
+	to { transform: scale(0.9); }
+}
+
+.mainLogo{
+	animation: beat 0.9s infinite alternate;
+	transform-origin: center;
+}
+
