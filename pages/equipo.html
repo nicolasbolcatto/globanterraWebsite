@@ -2,124 +2,191 @@
 <html lang="es">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="../assets/img/logo.png">
-    <title>GlobanTerra | Equipo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- My CSS-->
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- AOS CSS and JS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>GlobanTerra</title>
 </head>
 
 <body>
+    <!--Animation script to link to AOS library-->
     <script>
         AOS.init();
     </script>
-    <div class="mainContainer"><!--Main container for grid template-->
-        <header><!--header starts-->
-            <a class="logoLink" id="logo" href="../index.html">
-                <img src="../assets/img/logo.png" alt="logo globanterra">
-            </a>
-            <a class="logoText" id="logo" href="../index.html">
-                <h1>GlobanTerra</h1>
-            </a>
-        </header><!--header ends-->
-        
-        <nav><!--nav starts-->
-            <ul class="navList">
-                <li class="listItem"><a class="link" href="../index.html">Home</a></li>
-                <li class="listItem"><a class="link" href="./servicios.html">Servicios</a></li>
-                <li class="listItem"><a class="link" href="./experiencias.html">Experiencias</a></li>
-                <li class="listItem"><a class="link" href="./equipo.html">Equipo</a></li>
-                <li class="listItem"><a class="link" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav><!--nav ends-->
 
-        <main><!--main page starts-->
-            <section id="equipo-globanterra">
-                
-                <div class="title">
-                    <h1>Equipo GlobanTerra</h1>
+    <!--header starts-->
+    <header>
+        <div class="container-fluid">
+            <a class="text-decoration-none" href="../index.html">
+                <img class="d-block m-auto" src="../assets/img/logo.png" alt="logo globanterra">
+                <h1 class="logoText text-center fw-bold">GlobanTerra</h1>
+            </a>
+        </div>
+    </header>
+    <!--header ends-->
+    <!--nav starts-->
+    <nav class="navbar navbar-expand-md navbar-light myNav sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+                <div class="navbar-nav m-auto pe-4">
+                    <div class="myButton container-fluid">
+                        <a class="myButtonText" href="../index.html">Home</a>
+                    </div>
+                    <div class="myButton container-fluid">
+                        <a class="myButtonText" href="./servicios.html">Servicios</a>
+                    </div>
+                    <div class="myButton container-fluid">
+                        <a class="myButtonText" href="./experiencias.html">Experiencias</a>
+                    </div>
+                    <div class="myButton container-fluid">
+                        <a class="myButtonText" href="./equipo.html">Equipo</a>
+                    </div>
+                    <div class="myButton container-fluid">
+                        <a class="myButtonText" href="./contacto.html">Contacto</a>
+                    </div>
                 </div>
-    
-                <article id="nicolas-bolcatto">
-                    <div class="container leftBorder" data-aos="fade-right" data-aos-duration="1200">
-                        <div class="teamPhoto">
-                            <img src=../assets/img/nicolas.jpg alt="foto nicolas">
+            </div>
+        </div>
+    </nav>
+    <!--nav ends-->
+    <!--main starts-->
+    <main>
+        <div class="title">
+            <h1 class="text-center">Nuestro equipo</h1>
+        </div>
+        <section id="equipo">
+            <article id="nicolasbolcatto">
+                <div class="card myContainer m-4">
+                    <div class="row g-0 m-3">
+                        <div class="col-sm-12 col-md-3">
+                            <img class="img-thumbnail h-100" src=../assets/img/nicolas.jpg alt="foto-nicolas">
                         </div>
-                        <div class="text textTop">
-                            <div class="fs4">
-                                <h3>MSc. Ing. Nicolás G. Bolcatto</h3>
-                            </div>
-                            <div class="fs2">
-                                <p>Nicolás es Ingeniero Civil por la Universidad Nacional de Rosario y Máster en Ingeniería del Terreno por la Universidad Politécnica de Cataluña. Se desempeña desde hace más de 5 años como Consultor Geotécnico en la firma Torres
-                                    y Vercelli S.R.L., habiendo desarrollado más de 50 informes y memorias de ingeniería. Desde el año 2015 es docente de grado, y desde 2019 de postgrado en la Escuela de Ingeniería civil de la Universidad Nacional de Rosario.
-                                    Actualmente se encuentra completando sus estudios de Maestría en Ingeniería Vial y Especialización en Infraestructura de Datos Espaciales.</p>
-
-                            </div>
-                        </div>
-                    </div>
-                </article>
-    
-                <article id="manuel-odisio">
-                    <div class="container leftBorder" data-aos="fade-right" data-aos-duration="1200">
-                        <div class="teamPhoto">
-                            <img class="teamPhoto" src=../assets/img/manuel.jpg alt="foto manuel">
-                        </div>
-                        <div class="text textTop">
-                            <div class="fs4">
-                                <h3>Ing. Manuel M. Odisio</h3>
-                            </div>
-                            <div class="fs2">
-                            
-                                <p>Manuel es Ingeniero Civil por la Universidad Nacional de Rosario. Se desempeña desde hace más de 5 años como responsable de Oficina Técnica en la firma Torres y Vercelli S.R.L. Desde el año 2015 ha planificado, supervisado
-                                        y procesado más de 50 estudios geotécnicos y topográficos en campo y en laboratorio de mecánica de suelos, a lo largo de toda la Argentina, como así también en Uruguay. Actualmente continúa perfeccionándose mediante cursos
-                                        de posgrado en el área de Ingeniería del Terreno.</p>
+                        <div class="col-sm-12 col-md-9">
+                            <div class="card-body">
+                                <h2 class="card-title">MSc. Ing. Nicolás G. Bolcatto</h2>
+                                <p class="fs-4 card-text">Nicolás es Ingeniero Civil por la Universidad Nacional de Rosario y Máster en Ingeniería del Terreno por la Universidad Politécnica de Cataluña. Se desempeña desde hace más de 5 años como Consultor Geotécnico en la firma
+                                    Torres y Vercelli S.R.L., habiendo desarrollado más de 50 informes y memorias de ingeniería. Desde el año 2015 es docente de grado, y desde 2019 de postgrado en la Escuela de Ingeniería civil de la Universidad Nacional
+                                    de Rosario. Actualmente se encuentra completando sus estudios de Maestría en Ingeniería Vial y Especialización en Infraestructura de Datos Espaciales.</p>
                             </div>
                         </div>
                     </div>
-                </article>
-            </section>
-    
-        </main>  <!--main page ends-->
+                </div>
+            </article>
+            <article id="manuelodisio">
+                <div class="card myContainer m-4">
+                    <div class="row g-0 m-3">
+                        <div class="col-sm-12 col-md-3">
+                            <img class="img-thumbnail h-100" src=../assets/img/manuel.jpg alt="foto-manuel">
+                        </div>
+                        <div class="col-sm-12 col-md-9">
+                            <div class="card-body">
+                                <h2 class="card-title">Ing. Manuel Matías Odisio</h2>
+                                <p class="fs-4 card-text">Manuel es Ingeniero Civil por la Universidad Nacional de Rosario. Se desempeña desde hace más de 5 años como responsable de Oficina Técnica en la firma Torres y Vercelli S.R.L. Desde el año 2015 ha planificado, supervisado
+                                    y procesado más de 50 estudios geotécnicos y topográficos en campo y en laboratorio de mecánica de suelos, a lo largo de toda la Argentina, como así también en Uruguay. Actualmente continúa perfeccionándose mediante
+                                    cursos de posgrado en el área de Ingeniería del Terreno.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!--main ends-->
+    <!--footer starts-->
+    <footer>
+        <!--nav starts-->
+        <nav class="navbar navbar-expand-md navbar-light myNav sticky-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+                    <div class="navbar-nav m-auto pe-4">
+                        <div class="myButton container-fluid">
+                            <a class="myButtonText" href="../index.html">Home</a>
+                        </div>
+                        <div class="myButton container-fluid">
+                            <a class="myButtonText" href="./servicios.html">Servicios</a>
+                        </div>
+                        <div class="myButton container-fluid">
+                            <a class="myButtonText" href="./experiencias.html">Experiencias</a>
+                        </div>
+                        <div class="myButton container-fluid">
+                            <a class="myButtonText" href="./equipo.html">Equipo</a>
+                        </div>
+                        <div class="myButton container-fluid">
+                            <a class="myButtonText" href="./contacto.html">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--nav ends-->
+        <!--social networks start-->
+        <section class="container-fluid d-sm-flex flex-sm-column d-md-flex flex-md-row">
+            <div class="container pt-3">
+                <a id="email" href="mailto:contacto@globanterra.com.ar">
+                    <img class="d-block mx-auto" width=70px src="../assets/img/email.png" alt="logo-email">
+                </a>
+            </div>
+            <div class="container pt-3">
+                <a id="whatsapp" href="https://api.whatsapp.com/send?phone=05493416428768&text=Hola, quiero conocer más sobre GlobanTerra" target="_blank">
+                    <img class="d-block mx-auto" width=70px src="../assets/img/whatsapp.png" alt="logo-whatsapp">
+                </a>
+            </div>
+            <div class="container pt-3">
+                <a id="linkedin" href="https://www.linkedin.com/in/globanterra/" target="=_blank">
+                    <img class="d-block mx-auto" width=70px src="../assets/img/linkedin.png" alt="logo-linkedin">
+                </a>
+            </div>
+            <div class="container pt-3">
+                <a id="instagram" href="https://www.instagram.com/globanterra/" target="_blank">
+                    <img class="d-block mx-auto" width=70px src="../assets/img/instagram.png" alt="logo-instagram">
+                </a>
+            </div>
+            <div class="container pt-3 pb-3">
+                <a id="twitter" href="https://twitter.com/globanterra" target="_blank">
+                    <img class="d-block mx-auto" width=70px src="../assets/img/twitter.png" alt="logo-twitter">
+                </a>
+            </div>
+        </section>
+        <!--social networks end-->
+        <!--credits start-->
+        <section class="row">
+            <article class="col-sm-12 m-auto">
+                <p class="text-center fw-bold fs-5">Desarrollado por Nico Bolcatto</p>
+                <p class="text-center fw-bold fs-5">Contacto: nicobolcatto@gmail.com</p>
+            </article>
+        </section>
+        <!--credits end-->
+    </footer>
+    <!--footer ends-->
 
-        <footer id="footer"><!--footer starts-->
-            <nav>
-                <ul class="navList">
-                    <li class="listItem"><a class="link" href="../index.html">Home</a></li>
-                    <li class="listItem"><a class="link" href="./servicios.html">Servicios</a></li>
-                    <li class="listItem"><a class="link" href="./experiencias.html">Experiencias</a></li>
-                    <li class="listItem"><a class="link" href="./equipo.html">Equipo</a></li>
-                    <li class="listItem"><a class="link" href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-    
-            <section class="shareContainer" id="contact">
-    
-                <a class="link" id="email" href="mailto:contacto@globanTerra.com.ar">
-                    <img src="../assets/img/email.png" alt="logo-email">
-                </a>
-    
-                <a class="link" id="whatsapp" href="https://api.whatsapp.com/send?phone=05493416428768&text=Hola, quiero conocer más sobre GlobanTerra" target="_blank">
-                    <img src="../assets/img/whatsapp.png" alt="logo-whatsapp">
-                </a>
-    
-                <a class="link" id="linkedin" href="https://www.linkedin.com/in/globanterra/" target="=_blank">
-                    <img src="../assets/img/linkedin.png" alt="logo-linkedin">
-                </a>
-    
-                <a class="link" id="instagram" href="https://www.instagram.com/globanterra/" target="_blank">
-                    <img src="../assets/img/instagram.png" alt="logo-instagram">
-                </a>
-    
-                <a class="link" id="twitter" href="https://twitter.com/globanterra" target="_blank">
-                    <img src="../assets/img/twitter.png" alt="logo-twitter">
-                </a>
-    
-            </section>
-    
-        </footer> <!--footer ends-->
-    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
 </body>
 
 </html>

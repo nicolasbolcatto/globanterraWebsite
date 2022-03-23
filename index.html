@@ -1,169 +1,265 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/logo.png">
-    <title>GlobanTerra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- My CSS-->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- AOS CSS and JS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>GlobanTerra</title>
 </head>
 
 <body>
+    <!--Animation script to link to AOS library-->
     <script>
         AOS.init();
     </script>
-    <div class="mainContainer">
-        <!--Main container for grid template-->
-        <header>
-            <!--header starts-->
-            <a class="logoLink" id="logo" href="./index.html">
-                <img src="./assets/img/logo.png" alt="logo globanterra">
-            </a>
-            <a class="logoText" id="logo" href="./index.html">
-                <h1>GlobanTerra</h1>
-            </a>
-        </header>
-        <!--header ends-->
 
-        <nav>
-            <!--nav starts-->
-            <ul class="navList">
-                <li class="listItem" id="home"><a class="link" href="./index.html">Home</a></li>
-                <li class="listItem" id="services"><a class="link" href="./pages/servicios.html">Servicios</a></li>
-                <li class="listItem" id="experiences"><a class="link" href="./pages/experiencias.html">Experiencias</a></li>
-                <li class="listItem" id="team"><a class="link" href="./pages/equipo.html">Equipo</a></li>
-                <li class="listItem" id="contact"><a class="link" href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+    <!--header starts-->
+    <header>
+        <div class="container-fluid">
+            <a class="text-decoration-none" href="./index.html">
+                <img class="d-block m-auto" src="./assets/img/logo.png" alt="logo globanterra">
+                <h1 class="logoText text-center fw-bold">GlobanTerra</h1>
+            </a>
+        </div>
+    </header>
+    <!--header ends-->
+
+    <!--nav starts-->
+    <nav class="navbar navbar-expand-md navbar-light myNav sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+                <div class="navbar-nav m-auto pe-4">
+                    <div class="myButton container-fluid">
+                        <a class="myButtonText" href="./index.html">Home</a>
+                    </div>
+                    <div class="myButton container-fluid">
+                        <a class="myButtonText" href="./pages/servicios.html">Servicios</a>
+                    </div>
+                    <div class="myButton container-fluid">
+                        <a class="myButtonText" href="./pages/experiencias.html">Experiencias</a>
+                    </div>
+                    <div class="myButton container-fluid">
+                        <a class="myButtonText" href="./pages/equipo.html">Equipo</a>
+                    </div>
+                    <div class="myButton container-fluid">
+                        <a class="myButtonText" href="./pages/contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--nav ends-->
+    <!--main starts-->
+    <main>
+        <!--carousel starts-->
+        <section id="carousel">
+            <div id="carouselWithCaptions" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/gallery1.png" class="d-block w-100" alt="aerial-image-river">
+                        <div class="carousel-caption d-none d-sm-block myNav">
+                            <!--change this myNav-->
+                            <h5 class="display-2">Ingeniería del Terreno</h5>
+                            <p class="fs-1">Más precisa. Más rápida. Más eficiente.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/gallery2.png" class="d-block w-100" alt="aerial-image-coast-1">
+                        <div class="carousel-caption d-none d-sm-block myNav">
+                            <h5 class="display-2">Innovación en modelado del terreno</h5>
+                            <p class="fs-1">Productos de alta resolución, a menor costo.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/gallery3.png" class="d-block w-100" alt="aerial-image-coast-2">
+                        <div class="carousel-caption d-none d-sm-block myNav">
+                            <h5 class="display-2">Tecnología al servicio del medio ambiente</h5>
+                            <p class="fs-1">Menos emisiones. Menores plazos. Menor riesgo.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselWithCaptions" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselWithCaptions" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </section>
+        <!--carousel ends-->
+        <!--stats start-->
+        <section class="container-fluid">
+            <div class="row px-5">
+                <div class="col-lg-3 py-3">
+                    <div class="statBox" data-aos="zoom-in" data-aos-duration="1000">
+                        <h4>Horas de vuelo</h4>
+                        <p>29</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 py-3">
+                    <div class="statBox" data-aos="zoom-in" data-aos-duration="1000">
+                        <h4>Imágenes capturadas</h4>
+                        <p>5.200</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 py-3">
+                    <div class="statBox" data-aos="zoom-in" data-aos-duration="1000">
+                        <h4>Superficie relevada</h4>
+                        <p>854.250 m<sup>2</sup>
+                            <p>
+                    </div>
+                </div>
+                <div class="col-lg-3 py-3">
+                    <div class="statBox" data-aos="zoom-in" data-aos-duration="1000">
+                        <h4>Hs de procesamiento computacional</h4>
+                        <p>32</p>
+                    </div>
+                </div>
+        </section>
+        <!--stats end-->
+        <!--description starts-->
+        <section class="container-fluid">
+            <div class="row px-5">
+                <article class="col-sm-12 col-md-12 col-lg-4 px-3 py-3">
+                    <div class="cardBackground card h-100" data-aos="fade-right" data-aos-duration="1200" id="who">
+                        <div class="card-body">
+                            <h5 class="card-title display-4">Quienes somos</h5>
+                            <p class="card-text fs-4 py-3">Somos una startup de Ingeniería Civil especializada en el terreno.</p>
+                            <p class="card-text fs-4">Contamos con tecnología y know-how para generar productos topográficos y modelos 3D de alta resolución en menos tiempo que con las técnicas tradicionales.</p>
+                            <p class="card-text fs-4">Trabajamos día a día para mejorar la productividad en el desarrollo de proyectos de ingeniería.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm-12 col-md-12 col-lg-4 px-3 py-3">
+                    <div class="cardBackground card h-100" data-aos="fade-left" data-aos-duration="1200" id="what">
+                        <div class="card-body">
+                            <h5 class="card-title display-4">Que buscamos</h5>
+                            <p class="card-text fs-4 py-3">Nuestro principal objetivo es mejorar la productividad y la seguridad en el proyecto y construcción de obras de ingeniería, reduciendo tiempos, incrementando la precisión en la inspección y control, y reduciendo riesgos en
+                                zonas de difícil acceso.</p>
+                            <p class="card-text fs-4">Acortamos los tiempos de los proyectos y la supervisión de obras y simplificamos el acceso y la seguridad a sitios complejos a través de la combinación de tecnología de aeronaves no tripuladas y receptores GNSS.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm-12 col-md-12 col-lg-4 px-3 py-3">
+                    <div class="cardBackground card h-100" data-aos="fade-right" data-aos-duration="1200" id="how">
+                        <div class="card-body">
+                            <h5 class="card-title display-4">Como lo hacemos</h5>
+                            <p class="card-text fs-4 py-3">Las técnicas que utilizamos son 100% escalables. Capturamos información espacial, la georreferenciamos y construimos modelos digitales de alta resolución que describen en profundidad la forma y textura de hechos existentes.</p>
+                            <p class="card-text fs-4">Desde modelización de estructuras de edificios hasta infraestructuras de decenas de hectáreas, aplicamos tecnología para lograr soluciones de calidad.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!--description ends-->
+    </main>
+    <!--main ends-->
+    <!--footer starts-->
+    <footer>
+        <!--nav starts-->
+        <nav class="navbar navbar-expand-md navbar-light myNav sticky-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+                    <div class="navbar-nav m-auto pe-4">
+                        <div class="myButton container-fluid">
+                            <a class="myButtonText" href="./index.html">Home</a>
+                        </div>
+                        <div class="myButton container-fluid">
+                            <a class="myButtonText" href="./pages/servicios.html">Servicios</a>
+                        </div>
+                        <div class="myButton container-fluid">
+                            <a class="myButtonText" href="./pages/experiencias.html">Experiencias</a>
+                        </div>
+                        <div class="myButton container-fluid">
+                            <a class="myButtonText" href="./pages/equipo.html">Equipo</a>
+                        </div>
+                        <div class="myButton container-fluid">
+                            <a class="myButtonText" href="./pages/contacto.html">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
         <!--nav ends-->
-
-        <main>
-            <!--main page starts-->
-            <section class="gallery" id="front-image">
-                <img src=./assets/img/phantom.jpg alt="Galeria">
-                <div class="galleryText">
-                    <h2 id="sub0">Ingeniería del Terreno.</h2>
-                </div>
-                <div class="galleryText">
-                    <h3 id="sub1">Más rápida.</h3>
-                    <h3 id="sub2">Más precisa.</h3>
-                    <h3 id="sub3">Más eficiente.</h3>
-                </div>
-            </section>
-            <section class="stats" id="statistics">
-                <div class="statBox" data-aos="zoom-in" data-aos-duration="1000">
-                    <h4>Horas de vuelo</h4>
-                    <p>29</p>
-                </div>
-                <div class="statBox" data-aos="zoom-in" data-aos-duration="1000">
-                    <h4>Imágenes capturadas</h4>
-                    <p>5.200</p>
-                </div>
-                <div class="statBox" data-aos="zoom-in" data-aos-duration="1000">
-                    <h4>Superficie relevada</h4>
-                    <p>854.250 m<sup>2</sup>
-                        <p>
-                </div>
-                <div class="statBox" data-aos="zoom-in" data-aos-duration="1000">
-                    <h4>Horas de procesamiento computacional</h4>
-                    <p>32</p>
-                </div>
-            </section>
-            <section id="description">
-                <article class="container leftBorder" data-aos="fade-right" data-aos-duration="1200" id="who">
-                    <div class="text">
-                        <div class="fs4">
-                            <h3>Quienes somos</h3>
-                        </div>
-                        <div class="fs2">
-                            <p>Somos una startup de Ingeniería Civil especializada en el terreno. Contamos con tecnología y know-how para generar productos topográficos y modelos 3D de alta resolución en menos tiempo que con las técnicas tradicionales.</p>
-                            <p>Trabajamos día a día para mejorar la productividad en el desarrollo de proyectos de ingeniería. Acortamos los tiempos de los proyectos y la supervisión de obras y simplificamos el acceso y la seguridad a sitios complejos a
-                                través de la combinación de tecnología de aeronaves no tripuladas y receptores GNSS.</p>
-                        </div>
-                    </div>
-
-                    <div class="video">
-                        <iframe class="iframe" src="https://www.youtube.com/embed/5KIJ13dUZFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-
-                </article>
-
-                <article class="container leftBorder" data-aos="fade-left" data-aos-duration="1200" id="what">
-
-                    <div class="text">
-                        <div class="fs4">
-                            <h3>Que buscamos</h3>
-                        </div>
-                        <div class="fs2">
-                            <p>Nuestro principal objetivo es mejorar la productividad y la seguridad en el proyecto y construcción de obras de ingeniería, reduciendo tiempos, incrementando la precisión en la inspección y control, y reduciendo riesgos en
-                                zonas de difícil acceso.</p>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <img src=./assets/img/cruce-a012.jpg alt="vista aerea cruce vial">
-                    </div>
-
-                </article>
-
-                <article class="container leftBorder" data-aos="fade-right" data-aos-duration="1200" id="how">
-
-                    <div class="text">
-                        <div class="fs4">
-                            <h3>Como lo hacemos</h3>
-                        </div>
-                        <div class="fs2">
-                            <p>Las técnicas que utilizamos son 100% escalables. Capturamos información espacial, la georreferenciamos y construimos modelos digitales de alta resolución que describen en profundidad la forma y textura de hechos existentes.</p>
-                            <p>Desde modelización de estructuras de edificios hasta infraestructuras de decenas de hectáreas, aplicamos tecnología para lograr soluciones de calidad.</p>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <img src=./assets/img/barranca.jpg alt="vista aerea urbana">
-                    </div>
-
-                </article>
-
-            </section>
-        </main>
-        <!--main page ends-->
-
-        <footer>
-            <!--footer starts-->
-            <nav>
-                <ul class="navList">
-                    <li class="listItem"><a class="link" href="index.html">Home</a></li>
-                    <li class="listItem"><a class="link" href="pages/servicios.html">Servicios</a></li>
-                    <li class="listItem"><a class="link" href="pages/experiencias.html">Experiencias</a></li>
-                    <li class="listItem"><a class="link" href="pages/equipo.html">Equipo</a></li>
-                    <li class="listItem"><a class="link" href="pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <section class="shareContainer" id="contact">
-
-                <a class="link" id="email" href="mailto:contacto@globanTerra.com.ar">
-                    <img src="./assets/img/email.png" alt="logo-email">
+        <!--social networks start-->
+        <section class="container-fluid d-sm-flex flex-sm-column d-md-flex flex-md-row">
+            <div class="container pt-3">
+                <a id="email" href="mailto:contacto@globanterra.com.ar">
+                    <img class="d-block mx-auto" width=70px src="./assets/img/email.png" alt="logo-email">
                 </a>
-
-                <a class="link" id="whatsapp" href="https://api.whatsapp.com/send?phone=05493416428768&text=Hola, quiero conocer más sobre GlobanTerra" target="_blank">
-                    <img src="./assets/img/whatsapp.png" alt="logo-whatsapp">
+            </div>
+            <div class="container pt-3">
+                <a id="whatsapp" href="https://api.whatsapp.com/send?phone=05493416428768&text=Hola, quiero conocer más sobre GlobanTerra" target="_blank">
+                    <img class="d-block mx-auto" width=70px src="./assets/img/whatsapp.png" alt="logo-whatsapp">
                 </a>
-
-                <a class="link" id="linkedin" href="https://www.linkedin.com/in/globanterra/" target="=_blank">
-                    <img src="./assets/img/linkedin.png" alt="logo-linkedin">
+            </div>
+            <div class="container pt-3">
+                <a id="linkedin" href="https://www.linkedin.com/in/globanterra/" target="=_blank">
+                    <img class="d-block mx-auto" width=70px src="./assets/img/linkedin.png" alt="logo-linkedin">
                 </a>
-
-                <a class="link" id="instagram" href="https://www.instagram.com/globanterra/" target="_blank">
-                    <img src="./assets/img/instagram.png" alt="logo-instagram">
+            </div>
+            <div class="container pt-3">
+                <a id="instagram" href="https://www.instagram.com/globanterra/" target="_blank">
+                    <img class="d-block mx-auto" width=70px src="./assets/img/instagram.png" alt="logo-instagram">
                 </a>
-
-                <a class="link" id="twitter" href="https://twitter.com/globanterra" target="_blank">
-                    <img src="./assets/img/twitter.png" alt="logo-twitter">
+            </div>
+            <div class="container pt-3 pb-3">
+                <a id="twitter" href="https://twitter.com/globanterra" target="_blank">
+                    <img class="d-block mx-auto" width=70px src="./assets/img/twitter.png" alt="logo-twitter">
                 </a>
+            </div>
+        </section>
+        <!--social networks end-->
+        <!--credits start-->
+        <section class="row">
+            <article class="col-sm-12 m-auto">
+                <p class="text-center fw-bold fs-5">Desarrollado por Nico Bolcatto</p>
+                <p class="text-center fw-bold fs-5">Contacto: nicobolcatto@gmail.com</p>
+            </article>
+        </section>
+        <!--credits end-->
+    </footer>
+    <!--footer ends-->
 
-            </section>
-        </footer>
-        <!--footer ends-->
-    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
 </body>
+
+</html>

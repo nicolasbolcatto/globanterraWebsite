@@ -2,204 +2,286 @@
 <html lang="es">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="../assets/img/logo.png">
-    <title>GlobanTerra | Contacto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- My CSS-->
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- AOS CSS and JS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>GlobanTerra</title>
 </head>
 
 <body>
-    <div class="mainContainer"><!--Main container for grid template-->
-        <header><!--header starts-->
-            <a class="logoLink" id="logo" href="../index.html">
-                <img src="../assets/img/logo.png" alt="logo globanterra">
+    <!--Animation script to link to AOS library-->
+    <script>
+        AOS.init();
+    </script>
+
+    <!--header starts-->
+    <header>
+        <div class="container-fluid">
+            <a class="text-decoration-none" href="../index.html">
+                <img class="d-block m-auto" src="../assets/img/logo.png" alt="logo globanterra">
+                <h1 class="logoText text-center fw-bold">GlobanTerra</h1>
             </a>
-            <a class="logoText" id="logo" href="../index.html">
-                <h1>GlobanTerra</h1>
-            </a>
-        </header><!--header ends-->
-        
-        <nav><!--nav starts-->
-            <ul class="navList">
-                <li class="listItem"><a class="link" href="../index.html">Home</a></li>
-                <li class="listItem"><a class="link" href="./servicios.html">Servicios</a></li>
-                <li class="listItem"><a class="link" href="./experiencias.html">Experiencias</a></li>
-                <li class="listItem"><a class="link" href="./equipo.html">Equipo</a></li>
-                <li class="listItem"><a class="link" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav><!--nav ends-->
-    
-        <main><!--main page starts-->
-            <div class="title">
-                <h1>Contactanos</h1>
-            </div>  
-            
-            <section class="contact">
-                    <form action="envio.php" method="post" id="contact-form"><!--contact form starts-->
-                        <div class="contactBox" id="contact-text">
-                            <h3>Envianos tu consulta o pedido de cotización a través del siguiente formulario:</h3>
+        </div>
+    </header>
+    <!--header ends-->
+    <!--nav starts-->
+    <nav class="navbar navbar-expand-md navbar-light myNav sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+                <div class="navbar-nav m-auto pe-4">
+                    <div class="myButton container-fluid">
+                        <a class="myButtonText" href="../index.html">Home</a>
+                    </div>
+                    <div class="myButton container-fluid">
+                        <a class="myButtonText" href="./servicios.html">Servicios</a>
+                    </div>
+                    <div class="myButton container-fluid">
+                        <a class="myButtonText" href="./experiencias.html">Experiencias</a>
+                    </div>
+                    <div class="myButton container-fluid">
+                        <a class="myButtonText" href="./equipo.html">Equipo</a>
+                    </div>
+                    <div class="myButton container-fluid">
+                        <a class="myButtonText" href="./contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--nav ends-->
+    <!--main starts-->
+    <main>
+        <div class="title">
+            <h1 class="text-center">Contactanos</h1>
+        </div>
+        <section class="contact">
+            <form action="envio.php" method="post" id="contact-form">
+                <!--contact form starts-->
+                <div class="contactBox" id="contact-text">
+                    <h3>Envianos tu consulta o pedido de cotización a través del siguiente formulario:</h3>
+                </div>
+
+                <fieldset class="contactBox" id="personal-data">
+                    <legend class="myLegend">Datos personales</legend>
+                    <label class="label" for="nombre">Nombre</label>
+                    <input type="text" placeholder="Juan" name="nombre" id="nombre">
+                    <br>
+                    <label class="label" for="apellido">Apellido</label>
+                    <input type="text" placeholder="Pérez" name="apellido" id="apellido">
+                    <br>
+                    <label class="label" for="email">Email</label>
+                    <input type="email" placeholder="juanperez@gmail.com" name="email" id="email">
+                </fieldset>
+
+                <fieldset class="contactBox" id="interest-area">
+                    <legend class="myLegend">Área de interés</legend>
+                    <label class="label" for="aerial-mapping">Aerial Mapping</label>
+                    <input type="checkbox" value="aerial-mapping" name="aerial-mapping" id="aerial-mapping">
+                    <br>
+                    <label class="label" for="control">Mediciones de control y avance de obra</label>
+                    <input type="checkbox" value="control" name="control" id="control">
+                    <br>
+                    <label class="label" for="topografia">Topografía terrestre</label>
+                    <input type="checkbox" value="topografia" name="topografia" id="topografia">
+                    <br>
+                    <label class="label" for="inventario">Inventario de obras viales y ferroviarias</label>
+                    <input type="checkbox" value="inventario" name="inventario" id="inventario">
+                    <br>
+                    <label class="label" for="sig">Sistemas de Información Geográfica</label>
+                    <input type="checkbox" value="sig" name="sig" id="sig">
+                    <br>
+                    <label class="label" for="satelital">Análisis y Procesamiento de Imágenes Satelitales</label>
+                    <input type="checkbox" value="satelital" name="satelital" id="satelital">
+                </fieldset>
+
+                <fieldset class="contactBox" id="client-type">
+                    <legend class="myLegend">Soy</legend>
+                    <input type="radio" id="profesional" name="soy" value="profesional">
+                    <label class="label" for="profesional">Profesional</label><br>
+                    <input type="radio" id="consultora" name="soy" value="consultora">
+                    <label class="label" for="consultora">Consultora de Ingeniería</label><br>
+                    <input type="radio" id="constructora" name="soy" value="constructora">
+                    <label class="label" for="constructora">Empresa Constructora</label><br>
+                    <input class="label" type="radio" id="inmobiliaria" name="soy" value="inmobiliaria">
+                    <label class="label" for="inmobiliaria">Desarrolladora Inmobiliaria</label><br>
+                    <input class="label" type="radio" id="publico" name="soy" value="publico">
+                    <label class="label" for="publico">Ente Público o Estatal</label><br>
+                    <input class="label" type="radio" id="otro" name="soy" value="otro">
+                    <label class="label" for="otro">Otro:</label>
+                    <textarea name="otro-especificar" id="otro-especificar" cols="20" rows="1" placeholder="Especificar"></textarea><br>
+                </fieldset>
+
+                <fieldset class="contactBox" id="location">
+                    <legend class="myLegend">Provincia</legend>
+                    <select name="provincia" id="provincia">
+                            <option value="buenos-aires">Buenos Aires</option>
+                            <br>
+                            <option value="caba">CABA</option>
+                            <br>
+                            <option value="catamarca">Catamarca</option>
+                            <br>
+                            <option value="chaco">Chaco</option>
+                            <br>
+                            <option value="chubut">Chubut</option>
+                            <br>
+                            <option value="cordoba">Córdoba</option>
+                            <br>
+                            <option value="corrientes">Corrientes</option>
+                            <br>
+                            <option value="entre-rios">Entre Ríos</option>
+                            <br>
+                            <option value="formosa">Formosa</option>
+                            <br>
+                            <option value="jujuy">Jujuy</option>
+                            <br>
+                            <option value="la-pampa">La Pampa</option>
+                            <br>
+                            <option value="la-rioja">La Rioja</option>
+                            <br>
+                            <option value="mendoza">Mendoza</option>
+                            <br>
+                            <option value="misiones">Misiones</option>
+                            <br>
+                            <option value="neuquen">Neuquén</option>
+                            <br>
+                            <option value="rio-negro">Río Negro</option>
+                            <br>
+                            <option value="salta">Salta</option>
+                            <br>
+                            <option value="san-juan">San Juan</option>
+                            <br>
+                            <option value="san-luis">San Luis</option>
+                            <br>
+                            <option value="santa-cruz">Santa Cruz</option>
+                            <br>
+                            <option value="santa-fe">Santa Fe</option>
+                            <br>
+                            <option value="santiago-del-estero">Santiago del Estero</option>
+                            <br>
+                            <option value="tierra-del-fuego">Tierra del Fuego</option>
+                            <br>
+                            <option value="tucuman">Tucumán</option>
+                            </select>
+                </fieldset>
+
+                <fieldset class="contactBox" id="text-message">
+                    <legend class="myLegend">Dejanos tu mensaje</legend>
+                    <textarea name="mensaje" id="message" placeholder="Escribe aquí"></textarea><br>
+                    <input type="submit" value="Enviar" id="submit">
+                    <input type="reset" value="Cancelar" id="reset">
+                </fieldset>
+            </form>
+            <!--contact form ends-->
+
+            <div class="center contactBox" id="map">
+                <!--map starts-->
+                <h2>Donde estamos</h2>
+                <iframe class="mapFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.6094389227364!2d-60.63679978481321!3d-32.96131948091675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab0735bf8fd7%3A0x614f699919b23934!2sJuan%20Manuel%20de%20Rosas%201939%2C%20S2000%20FPE%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1644368651705!5m2!1ses-419!2sar"
+                    class="iframe" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <!--map ends-->
+
+        </section>
+
+
+    </main>
+    <!--main ends-->
+
+    <!--footer starts-->
+    <footer>
+        <!--nav starts-->
+        <nav class="navbar navbar-expand-md navbar-light myNav sticky-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+                    <div class="navbar-nav m-auto pe-4">
+                        <div class="myButton container-fluid">
+                            <a class="myButtonText" href="../index.html">Home</a>
                         </div>
-
-                        <fieldset class="contactBox" id="personal-data">
-                            <legend class="legend">Datos personales</legend>
-                            <label class="label" for="nombre">Nombre</label>
-                            <input type="text" placeholder="Juan" name="nombre" id="nombre">
-                            <br>
-                            <label class="label" for="apellido">Apellido</label>
-                            <input type="text" placeholder="Pérez" name="apellido" id="apellido">
-                            <br>
-                            <label class="label" for="email">Email</label>
-                            <input type="email" placeholder="juanperez@gmail.com" name="email" id="email">
-                        </fieldset>
-
-                        <fieldset class="contactBox" id="interest-area">
-                            <legend class="legend">Área de interés</legend>
-                            <label class="label" for="aerial-mapping">Aerial Mapping</label>
-                            <input type="checkbox" value="aerial-mapping" name="aerial-mapping" id="aerial-mapping">
-                            <br>
-                            <label class="label" for="control">Mediciones de control y avance de obra</label>
-                            <input type="checkbox" value="control" name="control" id="control">
-                            <br>
-                            <label class="label" for="topografia">Topografía terrestre</label>
-                            <input type="checkbox" value="topografia" name="topografia" id="topografia">
-                            <br>
-                            <label class="label" for="inventario">Inventario de obras viales y ferroviarias</label>
-                            <input type="checkbox" value="inventario" name="inventario" id="inventario">
-                            <br>
-                            <label class="label" for="sig">Sistemas de Información Geográfica</label>
-                            <input type="checkbox" value="sig" name="sig" id="sig">
-                            <br>
-                            <label class="label" for="satelital">Análisis y Procesamiento de Imágenes Satelitales</label>
-                            <input type="checkbox" value="satelital" name="satelital" id="satelital">
-                        </fieldset>
-
-                        <fieldset class="contactBox" id="client-type">
-                            <legend class="legend">Soy</legend>
-                            <input type="radio" id="profesional" name="soy" value="profesional">
-                            <label class="label" for="profesional">Profesional</label><br>
-                            <input type="radio" id="consultora" name="soy" value="consultora">
-                            <label class="label" for="consultora">Consultora de Ingeniería</label><br>
-                            <input type="radio" id="constructora" name="soy" value="constructora">
-                            <label class="label" for="constructora">Empresa Constructora</label><br>
-                            <input class="label" type="radio" id="inmobiliaria" name="soy" value="inmobiliaria">
-                            <label class="label" for="inmobiliaria">Desarrolladora Inmobiliaria</label><br>
-                            <input class="label" type="radio" id="publico" name="soy" value="publico">
-                            <label class="label" for="publico">Ente Público o Estatal</label><br>
-                            <input class="label" type="radio" id="otro" name="soy" value="otro">
-                            <label class="label" for="otro">Otro:</label>
-                            <textarea name="otro-especificar" id="otro-especificar" cols="20" rows="1" placeholder="Especificar"></textarea><br>
-                        </fieldset>
-
-                        <fieldset class="contactBox" id="location">
-                            <legend class="legend">Provincia</legend>
-                            <select name="provincia" id="provincia">
-                                <option value="buenos-aires">Buenos Aires</option>
-                                <br>
-                                <option value="caba">CABA</option>
-                                <br>
-                                <option value="catamarca">Catamarca</option>
-                                <br>
-                                <option value="chaco">Chaco</option>
-                                <br>
-                                <option value="chubut">Chubut</option>
-                                <br>
-                                <option value="cordoba">Córdoba</option>
-                                <br>
-                                <option value="corrientes">Corrientes</option>
-                                <br>
-                                <option value="entre-rios">Entre Ríos</option>
-                                <br>
-                                <option value="formosa">Formosa</option>
-                                <br>
-                                <option value="jujuy">Jujuy</option>
-                                <br>
-                                <option value="la-pampa">La Pampa</option>
-                                <br>
-                                <option value="la-rioja">La Rioja</option>
-                                <br>
-                                <option value="mendoza">Mendoza</option>
-                                <br>
-                                <option value="misiones">Misiones</option>
-                                <br>
-                                <option value="neuquen">Neuquén</option>
-                                <br>
-                                <option value="rio-negro">Río Negro</option>
-                                <br>
-                                <option value="salta">Salta</option>
-                                <br>
-                                <option value="san-juan">San Juan</option>
-                                <br>
-                                <option value="san-luis">San Luis</option>
-                                <br>
-                                <option value="santa-cruz">Santa Cruz</option>
-                                <br>
-                                <option value="santa-fe">Santa Fe</option>
-                                <br>
-                                <option value="santiago-del-estero">Santiago del Estero</option>
-                                <br>
-                                <option value="tierra-del-fuego">Tierra del Fuego</option>
-                                <br>
-                                <option value="tucuman">Tucumán</option>
-                                </select>
-                        </fieldset>
-
-                        <fieldset class="contactBox" id="text-message">
-                            <legend class="legend">Dejanos tu mensaje</legend>
-                            <textarea name="mensaje" id="message" placeholder="Escribe aquí"></textarea><br>
-                            <input type="submit" value="Enviar" id="submit">
-                            <input type="reset" value="Cancelar" id="reset">
-                        </fieldset>
-                    </form><!--contact form ends-->
-                    
-                    <div class="center contactBox" id="map"><!--map starts-->
-                        <h2>Donde estamos</h2>
-                        <iframe class="mapFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.6094389227364!2d-60.63679978481321!3d-32.96131948091675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab0735bf8fd7%3A0x614f699919b23934!2sJuan%20Manuel%20de%20Rosas%201939%2C%20S2000%20FPE%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1644368651705!5m2!1ses-419!2sar"
-                            class="iframe" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div><!--map ends-->
-                    
-            </section>
-          
-        </main><!--main page ends-->
-
-        <footer id="footer"><!-- footer starts -->
-            <nav>
-                <ul class="navList">
-                    <li class="listItem"><a class="link" href="../index.html">Home</a></li>
-                    <li class="listItem"><a class="link" href="./servicios.html">Servicios</a></li>
-                    <li class="listItem"><a class="link" href="./experiencias.html">Experiencias</a></li>
-                    <li class="listItem"><a class="link" href="./equipo.html">Equipo</a></li>
-                    <li class="listItem"><a class="link" href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>  
-
-            <section class="shareContainer" id="contact">
-
-                <a class="link" id="email" href="mailto:contacto@globanTerra.com.ar">
-                    <img src="../assets/img/email.png" alt="logo-email">
+                        <div class="myButton container-fluid">
+                            <a class="myButtonText" href="./servicios.html">Servicios</a>
+                        </div>
+                        <div class="myButton container-fluid">
+                            <a class="myButtonText" href="./experiencias.html">Experiencias</a>
+                        </div>
+                        <div class="myButton container-fluid">
+                            <a class="myButtonText" href="./equipo.html">Equipo</a>
+                        </div>
+                        <div class="myButton container-fluid">
+                            <a class="myButtonText" href="./contacto.html">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--nav ends-->
+        <!--social networks start-->
+        <section class="container-fluid d-sm-flex flex-sm-column d-md-flex flex-md-row">
+            <div class="container pt-3">
+                <a id="email" href="mailto:contacto@globanterra.com.ar">
+                    <img class="d-block mx-auto" width=70px src="../assets/img/email.png" alt="logo-email">
                 </a>
-
-                <a class="link" id="whatsapp" href="https://api.whatsapp.com/send?phone=05493416428768&text=Hola, quiero conocer más sobre GlobanTerra" target="_blank">
-                    <img src="../assets/img/whatsapp.png" alt="logo-whatsapp">
+            </div>
+            <div class="container pt-3">
+                <a id="whatsapp" href="https://api.whatsapp.com/send?phone=05493416428768&text=Hola, quiero conocer más sobre GlobanTerra" target="_blank">
+                    <img class="d-block mx-auto" width=70px src="../assets/img/whatsapp.png" alt="logo-whatsapp">
                 </a>
-
-                <a class="link" id="linkedin" href="https://www.linkedin.com/in/globanterra/" target="=_blank">
-                    <img src="../assets/img/linkedin.png" alt="logo-linkedin">
+            </div>
+            <div class="container pt-3">
+                <a id="linkedin" href="https://www.linkedin.com/in/globanterra/" target="=_blank">
+                    <img class="d-block mx-auto" width=70px src="../assets/img/linkedin.png" alt="logo-linkedin">
                 </a>
-
-                <a class="link" id="instagram" href="https://www.instagram.com/globanterra/" target="_blank">
-                    <img src="../assets/img/instagram.png" alt="logo-instagram">
+            </div>
+            <div class="container pt-3">
+                <a id="instagram" href="https://www.instagram.com/globanterra/" target="_blank">
+                    <img class="d-block mx-auto" width=70px src="../assets/img/instagram.png" alt="logo-instagram">
                 </a>
-
-                <a class="link" id="twitter" href="https://twitter.com/globanterra" target="_blank">
-                    <img src="../assets/img/twitter.png" alt="logo-twitter">
+            </div>
+            <div class="container pt-3 pb-3">
+                <a id="twitter" href="https://twitter.com/globanterra" target="_blank">
+                    <img class="d-block mx-auto" width=70px src="../assets/img/twitter.png" alt="logo-twitter">
                 </a>
+            </div>
+        </section>
+        <!--social networks end-->
+        <!--credits start-->
+        <section class="row">
+            <article class="col-sm-12 m-auto">
+                <p class="text-center fw-bold fs-5">Desarrollado por Nico Bolcatto</p>
+                <p class="text-center fw-bold fs-5">Contacto: nicobolcatto@gmail.com</p>
+            </article>
+        </section>
+        <!--credits end-->
+    </footer>
+    <!--footer ends-->
 
-            </section>
 
-        
-        </footer><!--footer ends-->
-    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>

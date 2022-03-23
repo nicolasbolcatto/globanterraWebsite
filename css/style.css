@@ -23,76 +23,49 @@ body {
     background: radial-gradient(rgba(0, 82, 153, 0.5), rgb(255, 255, 255));
 }
 
-.mainContainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "header" "nav" "main" "footer";
-}
-
 
 /*Header*/
 
-header {
-    grid-area: header;
-}
-
-header .logoLink {
-    display: block;
-    margin: 1rem auto;
-    text-align: center;
-    width: fit-content;
-}
-
-header .logoLink img {
-    width: 60%;
-}
-
-header .logoLink img:hover {
-    transform: rotate(360deg);
-    transition: transform 2.5s;
-}
-
-header .logoText {
-    font-size: 1.5rem;
+.logoText {
+    font-size: 4rem;
     color: rgba(38, 89, 1, 0.75);
-    text-decoration: none;
-    text-align: center;
+}
+
+header a img {
+    width: 200px;
 }
 
 
 /*Navigation bar*/
 
-nav {
-    position: relative;
-    grid-area: nav;
+.myNav {
     background-color: rgba(38, 89, 1, 0.25);
 }
 
-.navList {
-    display: flex;
-    flex-flow: column wrap;
-    list-style-type: none;
-    text-align: center;
-}
-
-.navList .link {
-    padding: 2rem;
-    margin: 2rem 0.5rem;
+.myButton {
+    padding: 1rem;
+    margin: 1rem;
     border-radius: 1rem;
     background-color: rgba(38, 89, 1, 0.5);
-    display: block;
+}
+
+.myButtonText {
     font-size: 2rem;
     color: white;
     font-weight: bold;
     text-decoration: none;
+    text-align: center;
 }
 
-.navList .link:hover {
+.myButton:hover {
     background-color: rgb(0, 82, 153);
     cursor: pointer;
     transform: scale(105%);
     transition: transform 0.7s;
+}
+
+.myButtonText:hover {
+    color: white;
 }
 
 
@@ -102,124 +75,21 @@ nav {
 /*For index.html*/
 
 
-/*Gallery*/
-
-main {
-    grid-area: main;
-}
-
-.gallery {
-    position: relative;
-    height: auto;
-    text-align: center;
-}
-
-.gallery img {
-    height: auto;
-    width: 100%;
-}
-
-.galleryText #sub0,
-#sub1,
-#sub2,
-#sub3 {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #d9d9d9;
-}
-
-#sub0 {
-    top: 12.5%;
-    font-size: 2rem;
-}
-
-#sub1 {
-    top: 55%;
-    font-size: 1.5rem;
-}
-
-#sub2 {
-    top: 65%;
-    font-size: 1.5rem;
-}
-
-#sub3 {
-    top: 75%;
-    font-size: 1.5rem;
-}
-
-
 /*Stats*/
-
-.stats {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
 .statBox {
     background-color: rgba(38, 89, 1, 0.25);
-    width: 40%;
     padding: 1rem;
-    margin: 1rem;
     border-radius: 1rem;
     font-size: 2rem;
     color: rgba(38, 38, 38, 1);
     text-align: center;
+    height: 80px;
 }
 
-
-/*Description*/
-
-.container {
-    display: flex;
-    margin: 3rem 3rem;
-    padding: 2rem;
-    flex-direction: column;
-    align-items: center;
+.cardBackground {
     background-color: rgba(38, 89, 1, 0.25);
-}
-
-.leftBorder {
-    border-left: solid rgba(38, 89, 1, 0.25) 2rem;
-}
-
-.text {
-    padding: 2rem;
-    width: 100%;
-}
-
-.fs4 {
-    font-size: 4rem;
-}
-
-.fs2 {
-    font-size: 2rem;
-    line-height: 1.5;
-    margin-top: 2rem;
-}
-
-.video {
-    width: 90%;
-    height: 300px;
-    padding-bottom: 2rem;
-}
-
-.iframe {
-    width: 100%;
-    height: 100%;
-}
-
-.image {
-    width: 90%;
-    padding: 1rem 1rem;
-}
-
-.image img {
-    padding-bottom: 1.5rem;
-    max-width: 100%;
+    border-left: rgba(38, 89, 1, 0.5) solid 10px;
 }
 
 
@@ -227,112 +97,20 @@ main {
 
 .title {
     background-color: rgba(38, 89, 1, 0.5);
-    text-align: center;
-    width: auto;
-    font-size: 1.5rem;
     color: white;
     padding: 2rem;
 }
 
-.services {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "aerial" "control" "topo" "inventory" "sig" "satellite";
-}
-
-.containerService {
-    margin: 2rem 2rem;
-    padding: 1rem 2rem;
+.myContainer {
     background-color: rgba(38, 89, 1, 0.25);
-    border-radius: 5rem;
     box-shadow: 0.5rem 0.5rem rgba(38, 89, 1, 0.5);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px 500px auto;
-    grid-template-areas: "service-title" "service-logo" "service-text";
-    justify-items: center;
-    align-items: center;
-    height: auto;
 }
 
-.serviceTitle {
-    text-align: center;
-    grid-area: service-title;
-}
-
-.serviceTitle h2 {
-    font-size: 4rem;
-    padding: 3rem;
-}
-
-.serviceText {
-    grid-area: service-text;
-    padding: 1rem 1rem;
-    
-}
-
-.serviceText p {
-    font-size: 3rem;
-    text-align: center;
-    line-height: 4rem;
-}
-
-.serviceText ul li {
-    font-size: 3rem;
-    text-align: left;
-    line-height: 3rem;
-    list-style-position: inside;
-}
-
-.serviceLogo {
-    grid-area: service-logo;
-    width: 100%;
-    text-align: center;
-    padding: 3rem;
-}
-
-#aerial {
-    grid-area: aerial;
-}
-
-#control {
-    grid-area: control;
-}
-
-#topo {
-    grid-area: topo;
-}
-
-#inventory {
-    grid-area: inventory;
-}
-
-#sig {
-    grid-area: sig;
-}
-
-#satellite {
-    grid-area: satellite;
-}
-
-
-/*For experiencias.html*/
-
-.text ul li {
-    list-style-position: inside;
-}
-
-
-/*For equipo.html*/
-
-.textTop {
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.teamPhoto {
-    align-items: center;
+@media only screen and (max-width: 768px) {
+    #iframe1,
+    #iframe2 {
+        height: 400px;
+    }
 }
 
 
@@ -365,10 +143,8 @@ main {
     text-align: left;
 }
 
-.legend {
-    background-color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
+.myLegend {
+    font-weight: bold;
 }
 
 .label {
@@ -414,223 +190,6 @@ input[type="email"] {
     width: 100%;
     height: 3rem;
 }
-
-
-/*Footer*/
-
-footer {
-    grid-area: footer;
-}
-
-.shareContainer {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.shareContainer .link {
-    text-decoration: none;
-    color: black;
-    font-size: 2rem;
-}
-
-.shareContainer .link img {
-    width: 8rem;
-}
-
-.shareContainer .link img:hover {
-    transform: rotate(360deg);
-    transition: transform 1.5s;
-}
-
-.shareContainer .link p {
-    text-align: center;
-}
-
-.creds{
-    background-color:rgba(38, 89, 1, 0.75);
-}
-
-.creds a{
-    text-decoration: none;
-    color: white;
-}
-
-/*Media Queries*/
-
-
-/*For index.html*/
-
-
-/*Breakpoint Mobile-Tablet*/
-
-@media only screen and (min-width: 768px) {
-    nav {
-        position: sticky;
-        top: 0;
-        z-index: 100;
-    }
-    .navList {
-        display: flex;
-        flex-flow: row nowrap   ;
-        justify-content: center;
-    }
-    .stats {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        font-size: 3rem;
-    }
-    .statBox {
-        min-height: 100%;
-    }
-    #sub0 {
-        font-size: 3.5rem;
-    }
-    #sub1 {
-        font-size: 3rem;
-    }
-    #sub2 {
-        font-size: 3rem;
-    }
-    #sub3 {
-        font-size: 3rem;
-    }
-    .video{
-        height: 450px;
-    }
-
-    .serviceText {
-        grid-area: service-text;
-        padding: 2rem;
-    }
-    .serviceTitle h2 {
-        font-size: 2.5rem;
-        padding: 1.5rem;
-    }
-    .serviceText p {
-        font-size: 1.5rem;
-        text-align: center;
-        line-height: 2.5rem;
-    }
-    .serviceText ul li {
-        font-size: 1.5rem;
-        text-align: left;
-        line-height: 3rem;
-        list-style-position: inside;
-    }
-    .serviceLogo {
-        grid-area: service-logo;
-        width: 100%;
-        text-align: center;
-    }
-    .serviceLogo img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-
-/*Breakpoint Tablet-Desktop*/
-
-@media only screen and (min-width: 1024px) {
-    .stats {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-evenly;
-        align-items: center;
-        height: auto;
-        padding: 1rem;
-        font-size: 3rem;
-    }
-    .statBox {
-        height: 100%;
-    }
-    .container {
-        flex-direction: row;
-    }
-    #sub0 {
-        font-size: 5rem;
-    }
-    #sub1 {
-        font-size: 4rem;
-    }
-    #sub2 {
-        font-size: 4rem;
-    }
-    #sub3 {
-        font-size: 4rem;
-    }
-}
-
-
-/*For servicios.html*/
-
-
-/*Breakpoint Mobile-Tablet*/
-
-@media only screen and (min-width: 768px) {
-    
-    .title{
-        font-size: 2rem;
-    }
-    .services {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: "aerial control" "topo inventory" "sig satellite";
-    }
-    .containerService{
-        grid-template-rows: 80px 400px auto;
-    }
-    .serviceTitle{
-        font-size: 4rem;
-    }
-
-    .serviceText p{
-        font-size: 2rem;
-        line-height: 3rem;
-    }
-
-    .serviceText ul li{
-        font-size: 2rem;
-    }
-}
-
-
-/*Breakpoint Tablet-Desktop*/
-
-@media only screen and (min-width: 1024px) {
-    .services {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: "aerial control topo" "inventory sig satellite";
-    }
-    .containerService{
-        grid-template-rows: 150px 300px auto;
-    }
-    .serviceTitle{
-        font-size: 3rem;
-    }
-
-    .serviceLogo{
-        padding: 2rem;
-    }
-
-    .serviceText p{
-        font-size: 2rem;
-        line-height: 3rem;
-    }
-
-    .serviceText ul li{
-        font-size: 2rem;
-    }
-}
-
-
-/*For contacto.html*/
 
 
 /*Breakpoint Mobile-Tablet*/
