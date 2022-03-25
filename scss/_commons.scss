@@ -1,0 +1,61 @@
+//General settings
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+$primaryFont: 'Rubik',
+sans-serif;
+$fs-2: 2rem;
+$fs-3: 3rem;
+$fs-4: 4rem;
+//Colors
+$backgroundGradient: radial-gradient(rgba(0, 82, 153, 0.5),
+rgb(255, 255, 255));
+$logoText: rgba(38,
+89,
+1,
+0.75);
+$containerColor-25: rgba(38,
+89,
+1,
+0.25);
+$containerColor-50: rgba(38,
+89,
+1,
+0.5);
+$buttonHover:rgb(0,
+82,
+153);
+$boxShadow: 0.5rem 0.5rem rgba(38,
+89,
+1,
+0.5);
+//Animations
+@keyframes twist {
+    0% {
+        transform: rotate(45deg);
+    }
+    25% {
+        transform: rotate(-45deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    75% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes beat {
+    to {
+        transform: scale(0.9);
+    }
+}

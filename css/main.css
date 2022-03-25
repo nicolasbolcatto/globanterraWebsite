@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+@keyframes twist {
+  0% {
+    transform: rotate(45deg); }
+  25% {
+    transform: rotate(-45deg); }
+  50% {
+    transform: rotate(45deg); }
+  75% {
+    transform: rotate(-45deg); }
+  100% {
+    transform: rotate(45deg); } }
+
+@keyframes beat {
+  to {
+    transform: scale(0.9); } }
+
+header div a img {
+  width: 200px;
+  animation: beat 0.9s infinite alternate;
+  transform-origin: center; }
+
+header div a h1 {
+  font-size: 4rem;
+  color: rgba(38, 89, 1, 0.75); }
+
+nav {
+  background-color: rgba(38, 89, 1, 0.25); }
+  nav div div div div {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(38, 89, 1, 0.5); }
+    nav div div div div:hover {
+      background-color: #005299;
+      cursor: pointer;
+      transform: scale(105%);
+      transition: transform 0.7s; }
+    nav div div div div a {
+      font-size: 2rem;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      text-align: center; }
+      nav div div div div a:hover {
+        color: white; }
+
+body {
+  background: radial-gradient(rgba(0, 82, 153, 0.5), white); }
+  body main #carousel div div div div {
+    background-color: rgba(38, 89, 1, 0.25);
+    border-radius: 1rem; }
+  body main #stats div div div {
+    background-color: rgba(38, 89, 1, 0.25);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    color: #262626;
+    text-align: center;
+    height: 80px; }
+  body main #who-what-how div article div {
+    background-color: rgba(38, 89, 1, 0.25); }
+    body main #who-what-how div article div div {
+      border-left: rgba(38, 89, 1, 0.5) solid 10px; }
+
+footer #social-networks div a img {
+  animation-name: twist;
+  animation-duration: 8s;
+  animation-iteration-count: infinite; }

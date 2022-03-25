@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- My CSS-->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
 
     <!-- AOS CSS and JS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -29,35 +29,35 @@
     <header>
         <div class="container-fluid">
             <a class="text-decoration-none" href="./index.html">
-                <img class="mainLogo d-block m-auto" src="./assets/img/logo.png" alt="logo globanterra">
-                <h1 class="logoText text-center fw-bold">GlobanTerra</h1>
+                <img class="d-block m-auto" src="./assets/img/logo.png" alt="logo globanterra">
+                <h1 class="text-center">GlobanTerra</h1>
             </a>
         </div>
     </header>
     <!--header ends-->
 
     <!--nav starts-->
-    <nav class="navbar navbar-expand-md navbar-light myNav sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
             <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
                 <div class="navbar-nav m-auto pe-4">
-                    <div class="myButton container-fluid">
-                        <a class="myButtonText" href="./index.html">Home</a>
+                    <div class="container-fluid mx-3">
+                        <a href="./index.html">Home</a>
                     </div>
-                    <div class="myButton container-fluid">
-                        <a class="myButtonText" href="./pages/servicios.html">Servicios</a>
+                    <div class="container-fluid mx-3">
+                        <a href="./pages/servicios.html">Servicios</a>
                     </div>
-                    <div class="myButton container-fluid">
-                        <a class="myButtonText" href="./pages/experiencias.html">Experiencias</a>
+                    <div class="container-fluid mx-3">
+                        <a href="./pages/experiencias.html">Experiencias</a>
                     </div>
-                    <div class="myButton container-fluid">
-                        <a class="myButtonText" href="./pages/equipo.html">Equipo</a>
+                    <div class="container-fluid mx-3">
+                        <a href="./pages/equipo.html">Equipo</a>
                     </div>
-                    <div class="myButton container-fluid">
-                        <a class="myButtonText" href="./pages/contacto.html">Contacto</a>
+                    <div class="container-fluid mx-3">
+                        <a href="./pages/contacto.html">Contacto</a>
                     </div>
                 </div>
             </div>
@@ -77,22 +77,21 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="assets/img/gallery1.png" class="d-block w-100" alt="aerial-image-river">
-                        <div class="carousel-caption d-none d-sm-block myNav">
-                            <!--change this myNav-->
+                        <div class="carousel-caption d-none d-sm-block">
                             <h5 class="display-2">Ingeniería del Terreno</h5>
                             <p class="fs-1">Más precisa. Más rápida. Más eficiente.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="assets/img/gallery2.png" class="d-block w-100" alt="aerial-image-coast-1">
-                        <div class="carousel-caption d-none d-sm-block myNav">
+                        <div class="carousel-caption d-none d-sm-block">
                             <h5 class="display-2">Innovación en modelado del terreno</h5>
                             <p class="fs-1">Productos de alta resolución, a menor costo.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="assets/img/gallery3.png" class="d-block w-100" alt="aerial-image-coast-2">
-                        <div class="carousel-caption d-none d-sm-block myNav">
+                        <div class="carousel-caption d-none d-sm-block">
                             <h5 class="display-2">Tecnología al servicio del medio ambiente</h5>
                             <p class="fs-1">Menos emisiones. Menores plazos. Menor riesgo.</p>
                         </div>
@@ -110,29 +109,29 @@
         </section>
         <!--carousel ends-->
         <!--stats start-->
-        <section class="container-fluid">
+        <section id="stats" class="container-fluid">
             <div class="row px-5">
                 <div class="col-lg-3 py-3">
-                    <div class="statBox" data-aos="zoom-in" data-aos-duration="1000">
+                    <div data-aos="zoom-in" data-aos-duration="1000">
                         <h4>Horas de vuelo</h4>
                         <p>29</p>
                     </div>
                 </div>
                 <div class="col-lg-3 py-3">
-                    <div class="statBox" data-aos="zoom-in" data-aos-duration="1000">
+                    <div data-aos="zoom-in" data-aos-duration="1000">
                         <h4>Imágenes capturadas</h4>
                         <p>5.200</p>
                     </div>
                 </div>
                 <div class="col-lg-3 py-3">
-                    <div class="statBox" data-aos="zoom-in" data-aos-duration="1000">
+                    <div data-aos="zoom-in" data-aos-duration="1000">
                         <h4>Superficie relevada</h4>
                         <p>854.250 m<sup>2</sup>
                             <p>
                     </div>
                 </div>
                 <div class="col-lg-3 py-3">
-                    <div class="statBox" data-aos="zoom-in" data-aos-duration="1000">
+                    <div data-aos="zoom-in" data-aos-duration="1000">
                         <h4>Hs de procesamiento computacional</h4>
                         <p>32</p>
                     </div>
@@ -140,10 +139,10 @@
         </section>
         <!--stats end-->
         <!--description starts-->
-        <section class="container-fluid">
+        <section id="who-what-how" class="container-fluid">
             <div class="row px-5">
                 <article class="col-sm-12 col-md-12 col-lg-4 px-3 py-3">
-                    <div class="cardBackground card h-100" data-aos="fade-right" data-aos-duration="1200" id="who">
+                    <div class="card h-100" data-aos="fade-right" data-aos-duration="1200" id="who">
                         <div class="card-body">
                             <h5 class="card-title display-4">Quienes somos</h5>
                             <p class="card-text fs-4 py-3">Somos una startup de Ingeniería Civil especializada en el terreno.</p>
@@ -154,7 +153,7 @@
                     </div>
                 </article>
                 <article class="col-sm-12 col-md-12 col-lg-4 px-3 py-3">
-                    <div class="cardBackground card h-100" data-aos="fade-left" data-aos-duration="1200" id="what">
+                    <div class="card h-100" data-aos="fade-left" data-aos-duration="1200" id="what">
                         <div class="card-body">
                             <h5 class="card-title display-4">Que buscamos</h5>
                             <p class="card-text fs-4 py-3">Nuestro principal objetivo es mejorar la productividad y la seguridad en el proyecto y construcción de obras de ingeniería, reduciendo tiempos, incrementando la precisión en la inspección y control, y reduciendo riesgos en
@@ -165,7 +164,7 @@
                     </div>
                 </article>
                 <article class="col-sm-12 col-md-12 col-lg-4 px-3 py-3">
-                    <div class="cardBackground card h-100" data-aos="fade-right" data-aos-duration="1200" id="how">
+                    <div class="card h-100" data-aos="fade-right" data-aos-duration="1200" id="how">
                         <div class="card-body">
                             <h5 class="card-title display-4">Como lo hacemos</h5>
                             <p class="card-text fs-4 py-3">Las técnicas que utilizamos son 100% escalables. Capturamos información espacial, la georreferenciamos y construimos modelos digitales de alta resolución que describen en profundidad la forma y textura de hechos existentes.</p>
@@ -189,20 +188,20 @@
               </button>
                 <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
                     <div class="navbar-nav m-auto pe-4">
-                        <div class="myButton container-fluid">
-                            <a class="myButtonText" href="./index.html">Home</a>
+                        <div class="container-fluid mx-3">
+                            <a href="./index.html">Home</a>
                         </div>
-                        <div class="myButton container-fluid">
-                            <a class="myButtonText" href="./pages/servicios.html">Servicios</a>
+                        <div class="container-fluid mx-3">
+                            <a href="./pages/servicios.html">Servicios</a>
                         </div>
-                        <div class="myButton container-fluid">
-                            <a class="myButtonText" href="./pages/experiencias.html">Experiencias</a>
+                        <div class="container-fluid mx-3">
+                            <a href="./pages/experiencias.html">Experiencias</a>
                         </div>
-                        <div class="myButton container-fluid">
-                            <a class="myButtonText" href="./pages/equipo.html">Equipo</a>
+                        <div class="container-fluid mx-3">
+                            <a href="./pages/equipo.html">Equipo</a>
                         </div>
-                        <div class="myButton container-fluid">
-                            <a class="myButtonText" href="./pages/contacto.html">Contacto</a>
+                        <div class="container-fluid mx-3">
+                            <a href="./pages/contacto.html">Contacto</a>
                         </div>
                     </div>
                 </div>
@@ -210,30 +209,30 @@
         </nav>
         <!--nav ends-->
         <!--social networks start-->
-        <section class="container-fluid d-sm-flex flex-sm-column d-md-flex flex-md-row">
+        <section class="container-fluid d-sm-flex flex-sm-column d-md-flex flex-md-row" id="social-networks">
             <div class="container pt-3">
                 <a id="email" href="mailto:contacto@globanterra.com.ar">
-                    <img class="socialNetLogo d-block mx-auto" width=70px src="./assets/img/email.png" alt="logo-email">
+                    <img class="d-block mx-auto" width=70px src="./assets/img/email.png" alt="logo-email">
                 </a>
             </div>
             <div class="container pt-3">
                 <a id="whatsapp" href="https://api.whatsapp.com/send?phone=05493416428768&text=Hola, quiero conocer más sobre GlobanTerra" target="_blank">
-                    <img class="socialNetLogo d-block mx-auto" width=70px src="./assets/img/whatsapp.png" alt="logo-whatsapp">
+                    <img class="d-block mx-auto" width=70px src="./assets/img/whatsapp.png" alt="logo-whatsapp">
                 </a>
             </div>
             <div class="container pt-3">
                 <a id="linkedin" href="https://www.linkedin.com/in/globanterra/" target="=_blank">
-                    <img class="socialNetLogo d-block mx-auto" width=70px src="./assets/img/linkedin.png" alt="logo-linkedin">
+                    <img class="d-block mx-auto" width=70px src="./assets/img/linkedin.png" alt="logo-linkedin">
                 </a>
             </div>
             <div class="container pt-3">
                 <a id="instagram" href="https://www.instagram.com/globanterra/" target="_blank">
-                    <img class="socialNetLogo d-block mx-auto" width=70px src="./assets/img/instagram.png" alt="logo-instagram">
+                    <img class="d-block mx-auto" width=70px src="./assets/img/instagram.png" alt="logo-instagram">
                 </a>
             </div>
             <div class="container pt-3 pb-3">
                 <a id="twitter" href="https://twitter.com/globanterra" target="_blank">
-                    <img class="socialNetLogo d-block mx-auto" width=70px src="./assets/img/twitter.png" alt="logo-twitter">
+                    <img class="d-block mx-auto" width=70px src="./assets/img/twitter.png" alt="logo-twitter">
                 </a>
             </div>
         </section>

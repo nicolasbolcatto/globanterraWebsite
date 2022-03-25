@@ -1,0 +1,15 @@
+header {
+    div {
+        a {
+            img {
+                width: 200px;
+                animation: beat 0.9s infinite alternate;
+                transform-origin: center;
+            }
+            h1 {
+                font-size: $fs-4;
+                color: $logoText;
+            }
+        }
+    }
+}

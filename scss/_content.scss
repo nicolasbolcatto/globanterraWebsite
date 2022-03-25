@@ -1,0 +1,44 @@
+body {
+    background: $backgroundGradient;
+    main {
+        #carousel {
+            div {
+                div {
+                    div {
+                        div {
+                            background-color: $containerColor-25;
+                            border-radius: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        #stats {
+            div {
+                div {
+                    div {
+                        background-color: $containerColor-25;
+                        padding: 1rem;
+                        border-radius: 1rem;
+                        font-size: $fs-2;
+                        color: rgba(38, 38, 38, 1);
+                        text-align: center;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+        #who-what-how {
+            div {
+                article {
+                    div {
+                        background-color: $containerColor-25;
+                        div {
+                            border-left: rgba(38, 89, 1, 0.5) solid 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
