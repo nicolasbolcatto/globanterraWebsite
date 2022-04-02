@@ -7,7 +7,7 @@ This is my first site as a web developer. It’s a website for drone aerial mapp
 The aim is to build a basic website still without Javascript code for interaction behind the scenes.
 The main goal of the project is to create my first website to complete the Web Development course at [Coderhouse](https://www.coderhouse.com/).
 
-# Languages, platforms and technologies
+# Tech Stack
 
 The following languages, platforms and technologies are included in the project:
 
@@ -17,12 +17,14 @@ The following languages, platforms and technologies are included in the project:
 - Animations and transitions using CSS and AOS (https://michalsnik.github.io/aos/) library
 - Git and GitHub for version control
 - Bootstrap 5
-- SASS
+- SCSS
+- SEO Optimization
 
 Still to implement:
 
-- SEO
-- Go to production!
+- Image and logo optimization
+- 404 Page
+- Contact form functionality
 
 # Functionality
 
