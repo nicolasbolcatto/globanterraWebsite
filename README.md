@@ -17,11 +17,11 @@ The following languages, platforms and technologies are included in the project:
 - Animations and transitions using CSS and AOS (https://michalsnik.github.io/aos/) library
 - Git and GitHub for version control
 - Bootstrap 5
+- SASS
 
 Still to implement:
 
 - SEO
-- SASS
 - Go to production!
 
 # Functionality

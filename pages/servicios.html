@@ -5,18 +5,23 @@
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="../assets/img/logo.png">
+    <meta name="description" content="Conocé nuestros servicios: Aerial Mapping, Certificación de obras, Topografía, Inventarios, SIG y Procesamiento satelital">
+    <meta name="keywords" content="topografía, aerofotogrametría, obras, rosario, construcción, relevamiento, imagenes, satelitales, información, geográfica">
+
+    <!--Agregar meta-->
+
+    <link rel="shortcut icon" href="../assets/img/logo.svg">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- My CSS-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
 
     <!-- AOS CSS and JS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <title>GlobanTerra</title>
+    <title>GlobanTerra | Servicios</title>
 </head>
 
 <body>
@@ -29,149 +34,136 @@
     <header>
         <div class="container-fluid">
             <a class="text-decoration-none" href="../index.html">
-                <img class="mainLogo d-block m-auto" src="../assets/img/logo.png" alt="logo globanterra">
-                <h1 class="logoText text-center fw-bold">GlobanTerra</h1>
+                <img class="d-block m-auto" src="../assets/img/logo.svg" alt="logo globanterra">
+                <h1 class="fw-bold text-center">GlobanTerra</h1>
             </a>
         </div>
     </header>
     <!--header ends-->
     <!--nav starts-->
-    <nav class="navbar navbar-expand-md navbar-light myNav sticky-top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+        <div id="navContainer" class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-            <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
-                <div class="navbar-nav m-auto pe-4">
-                    <div class="myButton container-fluid">
-                        <a class="myButtonText" href="../index.html">Home</a>
-                    </div>
-                    <div class="myButton container-fluid">
-                        <a class="myButtonText" href="./servicios.html">Servicios</a>
-                    </div>
-                    <div class="myButton container-fluid">
-                        <a class="myButtonText" href="./experiencias.html">Experiencias</a>
-                    </div>
-                    <div class="myButton container-fluid">
-                        <a class="myButtonText" href="./equipo.html">Equipo</a>
-                    </div>
-                    <div class="myButton container-fluid">
-                        <a class="myButtonText" href="./contacto.html">Contacto</a>
-                    </div>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div id="navbar" class="navbar-nav m-auto">
+                    <a href="../index.html" class="mx-3">
+                        <div class="myButton--rounded container-fluid">
+                            <p class="m-0">Home</p>
+                        </div>
+                    </a>
+                    <a href="./servicios.html" class="mx-3">
+                        <div class="myButton--rounded container-fluid">
+                            <p class="m-0">Servicios</p>
+                        </div>
+                    </a>
+                    <a href="./experiencias.html" class="mx-3">
+                        <div class="myButton--rounded container-fluid">
+                            <p class="m-0">Experiencias</p>
+                        </div>
+                    </a>
+                    <a href="./equipo.html" class="mx-3">
+                        <div class="myButton--rounded container-fluid">
+                            <p class="m-0">Equipo</p>
+                        </div>
+                    </a>
+                    <a href="./contacto.html" class="mx-3">
+                        <div class="myButton--rounded container-fluid">
+                            <p class="m-0">Contacto</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
     <!--nav ends-->
-
     <!--main starts-->
     <main>
         <div class="container-fluid title">
-            <h1 class="fs-1 fw-bold text-center">Nuestros servicios</h1>
+            <h2 class="fw-bold text-center">Nuestros servicios</h2>
         </div>
 
         <section class="row row-cols-1 row-cols-sm-2 row-cols-md-3 mx-3 mb-5 g-3">
-            <div class="col">
+            <article class="col">
                 <div class="myContainer card h-100 mt-3" data-aos="zoom-in" data-aos-duration="1000">
                     <img class="w-50 m-auto py-5" src="../assets/img/aerial-mapping-logo.png" class="card-img-top" alt="aerial-mapping-image">
                     <div class="card-body px-4">
-                        <h3 class="fw-bold card-title">Aerial Mapping</h3>
-                        <p class="fs-5 card-text">Utilizamos aerofotogrametría para generar cartografía digital de alta resolución en menos tiempo obteniendo:</p>
-                        <ul class="fs-5">
-                            <li>Curvas de nivel</li>
-                            <li>Nubes de puntos densas</li>
-                            <li>Mallas tridimensionales</li>
-                            <li>Ortomosaicos georreferenciados</li>
-                            <li>Perfiles topográficos</li>
+                        <h3 class="display-5 text-center fw-bold card-title">Aerial Mapping</h3>
+                        <p class="pt-3 fs-3 card-text">Utilizamos aerofotogrametría para generar cartografía digital de alta resolución en menos tiempo obteniendo:</p>
+                        <ul>
+                            <li class="fs-3">Curvas de nivel</li>
+                            <li class="fs-3">Nubes de puntos densas</li>
+                            <li class="fs-3">Mallas tridimensionales</li>
+                            <li class="fs-3">Ortomosaicos georreferenciados</li>
+                            <li class="fs-3">Perfiles topográficos</li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col">
+            </article>
+            <article class="col">
                 <div class="myContainer card h-100 mt-3" data-aos="zoom-in" data-aos-duration="1000">
                     <img class="w-50 m-auto py-5" src="../assets/img/mediciones-logo.png" class="card-img-top" alt="control-image">
                     <div class="card-body">
-                        <h3 class="fw-bold card-title">Certificación de obras</h3>
-                        <p class="fs-5 card-text">Realizamos mediciones de precisión en distancias, áreas y volúmenes sobre modelos 3D de alta resolución.</p>
-                        <p class="fs-5 card-text">Esto constituye una ventaja fundamental en la certificación de trabajos en obra, permitiendo crear y actualizar modelos tridimensionales, reflejando el avance de obras de ingeniería en tiempo real.</p>
+                        <h3 class="display-5 text-center fw-bold card-title">Certificación de obras</h3>
+                        <p class="pt-3 fs-3 card-text">Realizamos mediciones de precisión en distancias, áreas y volúmenes sobre modelos 3D de alta resolución.</p>
+                        <p class="fs-3 card-text">Esto constituye una ventaja fundamental en la certificación de trabajos en obra, permitiendo crear y actualizar modelos tridimensionales, reflejando el avance de obras de ingeniería en tiempo real.</p>
                     </div>
                 </div>
-            </div>
-            <div class="col">
+            </article>
+            <article class="col">
                 <div class="myContainer card h-100 mt-3" data-aos="zoom-in" data-aos-duration="1000">
                     <img class="w-50 m-auto py-5" src="../assets/img/topografia-logo.png" class="card-img-top" alt="topography-image">
                     <div class="card-body">
-                        <h3 class="fw-bold card-title">Topografía terrestre</h3>
-                        <p class="fs-5 card-text">En aquellos sectores donde la vegetación o las estructuras existentes no permiten un relevamiento aéreo, utilizamos tecnología GNSS y Estaciones Totales para obtener información geoespacial adicional, incorporándola a nuestros
+                        <h3 class="display-5 text-center fw-bold card-title">Topografía terrestre</h3>
+                        <p class="pt-3 fs-3 card-text">En aquellos sectores donde la vegetación o las estructuras existentes no permiten un relevamiento aéreo, utilizamos tecnología GNSS y Estaciones Totales para obtener información geoespacial adicional, incorporándola a nuestros
                             modelos.
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="col">
+            </article>
+            <article class="col">
                 <div class="myContainer card h-100 mt-3" data-aos="zoom-in" data-aos-duration="1000">
                     <img class="w-50 m-auto py-5" src="../assets/img/inventario-logo.png" class="card-img-top" alt="inventory-image">
                     <div class="card-body">
-                        <h3 class="fw-bold card-title">Inventario de obras viales y ferroviarias</h3>
-                        <p class="fs-5 card-text">A partir de modelos tridimensionales de alta resolución, identificamos, georreferenciamos y registramos señalización vertical y horizontal, patrones de fisuración, tipo y número de durmientes, barandas de defensa, estado de cunetas
+                        <h3 class="display-5 text-center fw-bold card-title">Inventario de obras viales y ferroviarias</h3>
+                        <p class="pt-3 fs-3 card-text">A partir de modelos tridimensionales de alta resolución, identificamos, georreferenciamos y registramos señalización vertical y horizontal, patrones de fisuración, tipo y número de durmientes, barandas de defensa, estado de cunetas
                             y alcantarillas, alambrados perimetrales e intercambiadores, entre otras estructuras relevantes.</p>
                     </div>
                 </div>
-            </div>
-            <div class="col">
+            </article>
+            <article class="col">
                 <div class="myContainer card h-100 mt-3" data-aos="zoom-in" data-aos-duration="1000">
                     <img class="w-50 m-auto py-5" src="../assets/img/sig-logo.png" class="card-img-top" alt="sig-image">
                     <div class="card-body">
-                        <h3 class="fw-bold card-title">Sistemas de Información Geográfica</h3>
-                        <p class="fs-5 card-text">Articulamos herramientas de software libre para organizar, almacenar, manipular, analizar y modelizar grandes cantidades de datos georreferenciados.</p>
-                        <p class="fs-5 card-text">Utilizamos esta información para optimizar la toma de decisiones de componente geoespacial, reduciendo costos y tiempos en el desarrollo de proyectos y estudios en distintos ámbitos de la ingeniería y la industria</p>
+                        <h3 class="display-5 text-center fw-bold card-title">Sistemas de Información Geográfica</h3>
+                        <p class="pt-3 fs-3 card-text">Articulamos herramientas de software libre para organizar, almacenar, manipular, analizar y modelizar grandes cantidades de datos georreferenciados.</p>
+                        <p class="fs-3 card-text">Utilizamos esta información para optimizar la toma de decisiones de componente geoespacial, reduciendo costos y tiempos en el desarrollo de proyectos y estudios en distintos ámbitos de la ingeniería y la industria</p>
                     </div>
                 </div>
-            </div>
-            <div class="col">
+            </article>
+            <article class="col">
                 <div class="myContainer card h-100 mt-3" data-aos="zoom-in" data-aos-duration="1000">
                     <img class="w-50 m-auto py-5" src="../assets/img/satelital-logo.png" class="card-img-top" alt="satellite-image">
                     <div class="card-body">
-                        <h3 class="fw-bold card-title">Análisis y procesamiento satelital</h3>
-                        <p class="fs-5 card-text">A partir del procesamiento de imágenes LANDSAT, MODIS, SENTINEL y otras, obtenemos mapas de usos del suelo, índices de vegetación (NDVI, SAVI, etc.), humedad del suelo, huella urbana, rastros de incendios forestales, y cualquier
+                        <h3 class="display-5 text-center fw-bold card-title">Análisis y procesamiento satelital</h3>
+                        <p class="pt-3 fs-3 card-text">A partir del procesamiento de imágenes LANDSAT, MODIS, SENTINEL y otras, obtenemos mapas de usos del suelo, índices de vegetación (NDVI, SAVI, etc.), humedad del suelo, huella urbana, rastros de incendios forestales, y cualquier
                             otro hecho detectable desde el espacio.</p>
                     </div>
                 </div>
-            </div>
+            </article>
+        </section>
     </main>
     <!--main ends-->
     <!--footer starts-->
     <footer>
-        <!--nav starts-->
-        <nav class="navbar navbar-expand-md navbar-light myNav sticky-top">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
-                    <div class="navbar-nav m-auto pe-4">
-                        <div class="myButton container-fluid">
-                            <a class="myButtonText" href="../index.html">Home</a>
-                        </div>
-                        <div class="myButton container-fluid">
-                            <a class="myButtonText" href="./servicios.html">Servicios</a>
-                        </div>
-                        <div class="myButton container-fluid">
-                            <a class="myButtonText" href="./experiencias.html">Experiencias</a>
-                        </div>
-                        <div class="myButton container-fluid">
-                            <a class="myButtonText" href="./equipo.html">Equipo</a>
-                        </div>
-                        <div class="myButton container-fluid">
-                            <a class="myButtonText" href="./contacto.html">Contacto</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!--nav ends-->
+        <!--separator starts-->
+        <section class="container-fluid" id="separator">
+            <h2 class="text-center">Contactate con nosotros</h2>
+        </section>
+        <!--separator ends-->
         <!--social networks start-->
-        <section class="container-fluid d-sm-flex flex-sm-column d-md-flex flex-md-row">
+        <section id="social-networks" class="container-fluid d-sm-flex flex-sm-column d-md-flex flex-md-row">
             <div class="container pt-3">
                 <a id="email" href="mailto:contacto@globanterra.com.ar">
                     <img class="socialNetLogo d-block mx-auto" width=70px src="../assets/img/email.png" alt="logo-email">
@@ -200,15 +192,15 @@
         </section>
         <!--social networks end-->
         <!--credits start-->
-        <section class="row">
+        <section id="credits" class="row">
             <article class="col-sm-6 m-auto">
-                <p class="text-center fw-bold fs-5">Créditos:</p>
-                <a href="https://www.flaticon.es/iconos-gratis/zumbido" title="zumbido iconos">Zumbido icons created by surang - Flaticon</a>
-                <a href="https://www.flaticon.com/free-icons/checklist" title="checklist icons">Checklist icons created by Umeicon - Flaticon</a>
-                <a href="https://www.flaticon.com/free-icons/topography" title="topography icons">Topography icons created by Fhmrvi94 - Flaticon</a>
-                <a href="https://www.flaticon.com/free-icons/railway" title="railway icons">Railway icons created by Smashicons - Flaticon</a>
-                <a href="https://www.flaticon.com/free-icons/layer" title="layer icons">Layer icons created by Freepik - Flaticon</a>
-                <a href="https://www.flaticon.com/free-icons/satellite" title="satellite icons">Satellite icons created by Freepik - Flaticon</a>
+                <p class="text-center fw-bold fs-5 p-0">Créditos:</p>
+                <p class="text-center p-0"><a class="fw-bold fs-5" href="https://www.flaticon.es/iconos-gratis/zumbido" title="zumbido iconos">Zumbido icons created by surang - Flaticon</a></p>
+                <p class="text-center p-0"><a class="text-center fw-bold fs-5" href="https://www.flaticon.com/free-icons/checklist" title="checklist icons">Checklist icons created by Umeicon - Flaticon</a></p>
+                <p class="text-center p-0"><a class="text-center fw-bold fs-5" href="https://www.flaticon.com/free-icons/topography" title="topography icons">Topography icons created by Fhmrvi94 - Flaticon</a></p>
+                <p class="text-center p-0"><a class="text-center fw-bold fs-5" href="https://www.flaticon.com/free-icons/railway" title="railway icons">Railway icons created by Smashicons - Flaticon</a></p>
+                <p class="text-center p-0"><a class="text-center fw-bold fs-5" href="https://www.flaticon.com/free-icons/layer" title="layer icons">Layer icons created by Freepik - Flaticon</a></p>
+                <p class="text-center p-0"><a class="text-center fw-bold fs-5" href="https://www.flaticon.com/free-icons/satellite" title="satellite icons">Satellite icons created by Freepik - Flaticon</a></p>
             </article>
             <article class="col-sm-6 m-auto">
                 <p class="text-center fw-bold fs-5">Desarrollado por Nico Bolcatto</p>
@@ -219,18 +211,8 @@
     </footer>
     <!--footer ends-->
 
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-
 </body>
-
 </html>

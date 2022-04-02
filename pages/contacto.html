@@ -5,18 +5,23 @@
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="../assets/img/logo.png">
+    <meta name="description" content="Dejanos tu mensaje o pedido de cotización">
+    <meta name="keywords" content="contacto">
+
+    <!--Agregar meta-->
+
+    <link rel="shortcut icon" href="../assets/img/logo.svg">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- My CSS-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
 
     <!-- AOS CSS and JS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <title>GlobanTerra</title>
+    <title>GlobanTerra | Contacto</title>
 </head>
 
 <body>
@@ -29,35 +34,45 @@
     <header>
         <div class="container-fluid">
             <a class="text-decoration-none" href="../index.html">
-                <img class="mainLogo d-block m-auto" src="../assets/img/logo.png" alt="logo globanterra">
-                <h1 class="logoText text-center fw-bold">GlobanTerra</h1>
+                <img class="d-block m-auto" src="../assets/img/logo.svg" alt="logo globanterra">
+                <h1 class="fw-bold text-center">GlobanTerra</h1>
             </a>
         </div>
     </header>
     <!--header ends-->
     <!--nav starts-->
-    <nav class="navbar navbar-expand-md navbar-light myNav sticky-top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+        <div id="navContainer" class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-            <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
-                <div class="navbar-nav m-auto pe-4">
-                    <div class="myButton container-fluid">
-                        <a class="myButtonText" href="../index.html">Home</a>
-                    </div>
-                    <div class="myButton container-fluid">
-                        <a class="myButtonText" href="./servicios.html">Servicios</a>
-                    </div>
-                    <div class="myButton container-fluid">
-                        <a class="myButtonText" href="./experiencias.html">Experiencias</a>
-                    </div>
-                    <div class="myButton container-fluid">
-                        <a class="myButtonText" href="./equipo.html">Equipo</a>
-                    </div>
-                    <div class="myButton container-fluid">
-                        <a class="myButtonText" href="./contacto.html">Contacto</a>
-                    </div>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div id="navbar" class="navbar-nav m-auto">
+                    <a href="../index.html" class="mx-3">
+                        <div class="myButton--rounded container-fluid">
+                            <p class="m-0">Home</p>
+                        </div>
+                    </a>
+                    <a href="./servicios.html" class="mx-3">
+                        <div class="myButton--rounded container-fluid">
+                            <p class="m-0">Servicios</p>
+                        </div>
+                    </a>
+                    <a href="./experiencias.html" class="mx-3">
+                        <div class="myButton--rounded container-fluid">
+                            <p class="m-0">Experiencias</p>
+                        </div>
+                    </a>
+                    <a href="./equipo.html" class="mx-3">
+                        <div class="myButton--rounded container-fluid">
+                            <p class="m-0">Equipo</p>
+                        </div>
+                    </a>
+                    <a href="./contacto.html" class="mx-3">
+                        <div class="myButton--rounded container-fluid">
+                            <p class="m-0">Contacto</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -65,174 +80,154 @@
     <!--nav ends-->
     <!--main starts-->
     <main>
-        <div class="title">
-            <h1 class="text-center">Contactanos</h1>
+        <div class="container-fluid title">
+            <h2 class="fw-bold text-center">Contactanos</h2>
         </div>
-        <section class="contact">
-            <form action="envio.php" method="post" id="contact-form">
-                <!--contact form starts-->
-                <div class="contactBox" id="contact-text">
-                    <h3>Envianos tu consulta o pedido de cotización a través del siguiente formulario:</h3>
-                </div>
 
-                <fieldset class="contactBox" id="personal-data">
-                    <legend class="myLegend">Datos personales</legend>
-                    <label class="label" for="nombre">Nombre</label>
-                    <input type="text" placeholder="Juan" name="nombre" id="nombre">
-                    <br>
-                    <label class="label" for="apellido">Apellido</label>
-                    <input type="text" placeholder="Pérez" name="apellido" id="apellido">
-                    <br>
-                    <label class="label" for="email">Email</label>
-                    <input type="email" placeholder="juanperez@gmail.com" name="email" id="email">
-                </fieldset>
+        <div class="container-fluid">
+            <h3 class="text-center py-3">Envianos tu consulta o pedido de cotización a través del siguiente formulario:</h3>
+        </div>
 
-                <fieldset class="contactBox" id="interest-area">
-                    <legend class="myLegend">Área de interés</legend>
-                    <label class="label" for="aerial-mapping">Aerial Mapping</label>
-                    <input type="checkbox" value="aerial-mapping" name="aerial-mapping" id="aerial-mapping">
-                    <br>
-                    <label class="label" for="control">Mediciones de control y avance de obra</label>
-                    <input type="checkbox" value="control" name="control" id="control">
-                    <br>
-                    <label class="label" for="topografia">Topografía terrestre</label>
-                    <input type="checkbox" value="topografia" name="topografia" id="topografia">
-                    <br>
-                    <label class="label" for="inventario">Inventario de obras viales y ferroviarias</label>
-                    <input type="checkbox" value="inventario" name="inventario" id="inventario">
-                    <br>
-                    <label class="label" for="sig">Sistemas de Información Geográfica</label>
-                    <input type="checkbox" value="sig" name="sig" id="sig">
-                    <br>
-                    <label class="label" for="satelital">Análisis y Procesamiento de Imágenes Satelitales</label>
-                    <input type="checkbox" value="satelital" name="satelital" id="satelital">
-                </fieldset>
-
-                <fieldset class="contactBox" id="client-type">
-                    <legend class="myLegend">Soy</legend>
-                    <input type="radio" id="profesional" name="soy" value="profesional">
-                    <label class="label" for="profesional">Profesional</label><br>
-                    <input type="radio" id="consultora" name="soy" value="consultora">
-                    <label class="label" for="consultora">Consultora de Ingeniería</label><br>
-                    <input type="radio" id="constructora" name="soy" value="constructora">
-                    <label class="label" for="constructora">Empresa Constructora</label><br>
-                    <input class="label" type="radio" id="inmobiliaria" name="soy" value="inmobiliaria">
-                    <label class="label" for="inmobiliaria">Desarrolladora Inmobiliaria</label><br>
-                    <input class="label" type="radio" id="publico" name="soy" value="publico">
-                    <label class="label" for="publico">Ente Público o Estatal</label><br>
-                    <input class="label" type="radio" id="otro" name="soy" value="otro">
-                    <label class="label" for="otro">Otro:</label>
-                    <textarea name="otro-especificar" id="otro-especificar" cols="20" rows="1" placeholder="Especificar"></textarea><br>
-                </fieldset>
-
-                <fieldset class="contactBox" id="location">
-                    <legend class="myLegend">Provincia</legend>
-                    <select name="provincia" id="provincia">
+        <!--Contact form starts-->
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="border col-md-6 col-lg-4">
+                    <fieldset class="px-3" id="personal-data">
+                        <legend class="ps-2 my-3 fw-bold display-6">Datos personales</legend>
+                        <input type="text" class="my-2 fs-2 form-control" id="name" placeholder="Nombre">
+                        <input type="text" class="my-2 fs-2 form-control" id="surname" placeholder="Apellido">
+                        <input type="email" class="my-2 fs-2 form-control" id="formControlInput" placeholder="Email">
+                    </fieldset>
+                    <fieldset class="py-3 px-3" id="location">
+                        <legend class="my-3 fw-bold display-6">Provincia</legend>
+                        <select class="fs-1 form-select" name="provincia" id="provincia" aria-label="Default select">
                             <option value="buenos-aires">Buenos Aires</option>
-                            <br>
                             <option value="caba">CABA</option>
-                            <br>
                             <option value="catamarca">Catamarca</option>
-                            <br>
                             <option value="chaco">Chaco</option>
-                            <br>
                             <option value="chubut">Chubut</option>
-                            <br>
                             <option value="cordoba">Córdoba</option>
-                            <br>
                             <option value="corrientes">Corrientes</option>
-                            <br>
                             <option value="entre-rios">Entre Ríos</option>
-                            <br>
                             <option value="formosa">Formosa</option>
-                            <br>
                             <option value="jujuy">Jujuy</option>
-                            <br>
                             <option value="la-pampa">La Pampa</option>
-                            <br>
                             <option value="la-rioja">La Rioja</option>
-                            <br>
                             <option value="mendoza">Mendoza</option>
-                            <br>
                             <option value="misiones">Misiones</option>
-                            <br>
                             <option value="neuquen">Neuquén</option>
-                            <br>
                             <option value="rio-negro">Río Negro</option>
-                            <br>
                             <option value="salta">Salta</option>
-                            <br>
                             <option value="san-juan">San Juan</option>
-                            <br>
                             <option value="san-luis">San Luis</option>
-                            <br>
                             <option value="santa-cruz">Santa Cruz</option>
-                            <br>
                             <option value="santa-fe">Santa Fe</option>
-                            <br>
                             <option value="santiago-del-estero">Santiago del Estero</option>
-                            <br>
                             <option value="tierra-del-fuego">Tierra del Fuego</option>
-                            <br>
                             <option value="tucuman">Tucumán</option>
-                            </select>
-                </fieldset>
-
-                <fieldset class="contactBox" id="text-message">
-                    <legend class="myLegend">Dejanos tu mensaje</legend>
-                    <textarea name="mensaje" id="message" placeholder="Escribe aquí"></textarea><br>
-                    <input type="submit" value="Enviar" id="submit">
-                    <input type="reset" value="Cancelar" id="reset">
-                </fieldset>
-            </form>
-            <!--contact form ends-->
-
-            <div class="center contactBox" id="map">
-                <!--map starts-->
-                <h2>Donde estamos</h2>
-                <iframe class="mapFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.6094389227364!2d-60.63679978481321!3d-32.96131948091675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab0735bf8fd7%3A0x614f699919b23934!2sJuan%20Manuel%20de%20Rosas%201939%2C%20S2000%20FPE%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1644368651705!5m2!1ses-419!2sar"
-                    class="iframe" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                          </select>
+                    </fieldset>
+                </div>
+                <div class="border col-md-6 col-lg-4">
+                    <fieldset class="px-3" id="interest-area">
+                        <legend class="my-3 fw-bold display-6">Área de interés</legend>
+                        <div class="fs-1 form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="aerial-mapping">
+                            <label class="fs-1 form-check-label" for="aerial-mapping">Aerial Mapping</label>
+                        </div>
+                        <div class="fs-1 form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="control">
+                            <label class="fs-1 form-check-label" for="control">Certificación de obras</label>
+                        </div>
+                        <div class="fs-1 form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="topo">
+                            <label class="fs-1 form-check-label" for="topo">Topografía</label>
+                        </div>
+                        <div class="fs-1 form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="inventario">
+                            <label class="fs-1 form-check-label" for="inventario">Inventario de obras viales y ferroviarias</label>
+                        </div>
+                        <div class="fs-1 form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="sig">
+                            <label class="fs-1 form-check-label" for="sig">Sistemas de Información Geográfica</label>
+                        </div>
+                        <div class="fs-1 form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="satelital">
+                            <label class="fs-1 form-check-label" for="satelital">Procesamiento Satelital</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="border col-md-6 col-lg-4">
+                    <fieldset class="px-3" id="client-type">
+                        <legend class="my-3 fw-bold display-6">Soy</legend>
+                        <div class="fs-1 form-check">
+                            <input class="form-check-input" type="radio" name="soy" value="" id="profesional">
+                            <label class="fs-1 form-check-label" for="profesional">Profesional</label>
+                        </div>
+                        <div class="fs-1 form-check">
+                            <input class="form-check-input" type="radio" name="soy" value="" id="consultora">
+                            <label class="fs-1 form-check-label" for="consultora">Consultora de ingeniería</label>
+                        </div>
+                        <div class="fs-1 form-check">
+                            <input class="form-check-input" type="radio" name="soy" value="" id="constructora">
+                            <label class="fs-1 form-check-label" for="constructora">Empresa Constructora</label>
+                        </div>
+                        <div class="fs-1 form-check">
+                            <input class="form-check-input" type="radio" name="soy" value="" id="inmobiliaria">
+                            <label class="fs-1 form-check-label" for="inmobiliaria">Desarrolladora inmobiliaria</label>
+                        </div>
+                        <div class="fs-1 form-check">
+                            <input class="form-check-input" type="radio" name="soy" value="" id="publico">
+                            <label class="fs-1 form-check-label" for="publico">Ente público o estatal</label>
+                        </div>
+                        <div class="fs-1 form-check">
+                            <input class="form-check-input" type="radio" name="soy" value="" id="otro">
+                            <label class="fs-1 form-check-label" for="otro">Otro</label>
+                        </div>
+                        <div class="fs-1 mb-3 form-check">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 50px;width: 300px;"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="border col-md-6 col-lg-12">
+                    <fieldset class="px-3" id="text-message">
+                        <div class="h-100 form-floating">
+                            <legend class="my-3 fw-bold display-6">Dejanos tu mensaje</legend>
+                            <textarea class="my-3 form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 280px;font-size: 2rem;"></textarea>
+                        </div>
+                    </fieldset>
+                </div>
             </div>
+            
+            <fieldset class="container-fluid px-3" id="send-button">
+                <div id="formButtons" class="text-center">
+                <button type="button" class="myButton--rounded fw-bold fs-2 mx-5 px-5 py-2 btn btn-lg">Enviar</button>
+                <button type="button" class="myButton--rounded fw-bold fs-2 mx-5 px-5 py-2 btn btn-lg">Cancelar</button>
+                </div>
+            </fieldset>
+            <!--map starts-->
+            <section class="px-3 my-3 fluid-container">
+                <h2 class="fw-bold display-6">Donde estamos</h2>
+                <iframe class="w-100" height=300px src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.6094389227364!2d-60.63679978481321!3d-32.96131948091675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab0735bf8fd7%3A0x614f699919b23934!2sJuan%20Manuel%20de%20Rosas%201939%2C%20S2000%20FPE%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1644368651705!5m2!1ses-419!2sar"
+                    class="iframe" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
             <!--map ends-->
-
-        </section>
-
-
+        </form>
+        <!--Contact form ends-->
+        
     </main>
     <!--main ends-->
-
     <!--footer starts-->
     <footer>
-        <!--nav starts-->
-        <nav class="navbar navbar-expand-md navbar-light myNav sticky-top">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
-                    <div class="navbar-nav m-auto pe-4">
-                        <div class="myButton container-fluid">
-                            <a class="myButtonText" href="../index.html">Home</a>
-                        </div>
-                        <div class="myButton container-fluid">
-                            <a class="myButtonText" href="./servicios.html">Servicios</a>
-                        </div>
-                        <div class="myButton container-fluid">
-                            <a class="myButtonText" href="./experiencias.html">Experiencias</a>
-                        </div>
-                        <div class="myButton container-fluid">
-                            <a class="myButtonText" href="./equipo.html">Equipo</a>
-                        </div>
-                        <div class="myButton container-fluid">
-                            <a class="myButtonText" href="./contacto.html">Contacto</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!--nav ends-->
+        <!--separator starts-->
+        <section class="container-fluid" id="separator">
+            <h2 class="text-center">Contactate con nosotros</h2>
+        </section>
+        <!--separator ends-->
         <!--social networks start-->
-        <section class="container-fluid d-sm-flex flex-sm-column d-md-flex flex-md-row">
+        <section class="container-fluid d-sm-flex flex-sm-column d-md-flex flex-md-row" id="social-networks">
             <div class="container pt-3">
                 <a id="email" href="mailto:contacto@globanterra.com.ar">
                     <img class="socialNetLogo d-block mx-auto" width=70px src="../assets/img/email.png" alt="logo-email">
@@ -271,17 +266,8 @@
     </footer>
     <!--footer ends-->
 
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!--Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
 </body>
-
 </html>

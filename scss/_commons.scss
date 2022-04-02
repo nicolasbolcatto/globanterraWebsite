@@ -10,31 +10,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
 $primaryFont: 'Rubik',
 sans-serif;
-$fs-2: 2rem;
-$fs-3: 3rem;
-$fs-4: 4rem;
 //Colors
-$backgroundGradient: radial-gradient(rgba(0, 82, 153, 0.5),
-rgb(255, 255, 255));
-$logoText: rgba(38,
-89,
-1,
-0.75);
-$containerColor-25: rgba(38,
-89,
-1,
-0.25);
-$containerColor-50: rgba(38,
-89,
-1,
-0.5);
-$buttonHover:rgb(0,
-82,
-153);
-$boxShadow: 0.5rem 0.5rem rgba(38,
-89,
-1,
-0.5);
+$colors:(
+    'backgroundGradient': radial-gradient(rgba(0, 82, 153, 0.5), rgb(255, 255, 255)),
+    'logoText': rgba(38,89,1,0.75),
+    'containerColor-10': rgba(38,89,1,0.10),
+    'containerColor-25': rgba(38,89,1,0.25),
+    'containerColor-50': rgba(38,89,1,0.5),
+    'buttonHover':rgb(0,82,153),
+    'titleBackground': rgba(38, 89, 1, 0.5),
+);
+
+//Mixins
+@mixin button($bgcolor,$margin,$padding){
+    background-color: $bgcolor;
+    margin: $margin;
+    padding: $padding;
+}
+@mixin text($font-size,$color,$font-weight, $text-decoration,$text-align){
+    font-size: $font-size;
+    color:$color;
+    font-weight: $font-weight;
+    text-decoration: $text-decoration;
+    text-align: $text-align;
+}
+
+//Buttons
+.myButton{
+    @include button(map-get($map:$colors,$key:'containerColor-50'),1rem,1rem);
+}
+
 //Animations
 @keyframes twist {
     0% {

@@ -1,12 +1,58 @@
+header {
+    div {
+        a {
+            img {
+                width: 200px;
+                animation: beat 0.9s infinite alternate;
+                transform-origin: center;
+            }
+            h1 {
+                font-size: 4rem;
+                color: map-get($map:$colors,$key:'logoText');
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+nav {
+    background-color: map-get($map:$colors,$key:'containerColor-25');
+    #navContainer {
+        #navbarNavAltMarkup {
+            #navbar {
+                a{
+                    text-decoration: none;
+                    .myButton--rounded {
+                        @extend .myButton;
+                        border-radius: 1rem;
+                        &:hover {
+                            background-color: rgb(0, 82, 153);
+                            cursor: pointer;
+                            transform: scale(105%);
+                            transition: transform 0.7s;
+                        }
+                        p {
+                            @include text(2rem,white,bold,none,center);
+                            &:hover {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 body {
-    background: $backgroundGradient;
+    background: map-get($map:$colors,$key:'backgroundGradient');
     main {
         #carousel {
-            div {
-                div {
-                    div {
-                        div {
-                            background-color: $containerColor-25;
+            #carouselWithCaptions {
+                #carousel-inner {
+                    .carousel-item {
+                        .carousel-caption {
+                            background-color: map-get($map:$colors,$key:'containerColor-25');
                             border-radius: 1rem;
                         }
                     }
@@ -14,31 +60,86 @@ body {
             }
         }
         #stats {
-            div {
-                div {
-                    div {
-                        background-color: $containerColor-25;
-                        padding: 1rem;
+            .row{
+                article {
+                    .card{
+                        background-color: map-get($map:$colors,$key:'containerColor-25');
                         border-radius: 1rem;
-                        font-size: $fs-2;
-                        color: rgba(38, 38, 38, 1);
-                        text-align: center;
-                        height: 80px;
+                    }
+                    .card:hover{
+                        box-shadow: 0 0 15px rgba(33,33,33,.2); 
+                    }
+                }
+            } 
+        }
+        #who-what-how {
+            .row {
+                article {
+                    .card {
+                        background-color: map-get($map:$colors,$key:'containerColor-10');
+                        .card-body {
+                            border-left: rgba(38, 89, 1, 0.5) solid 10px;
+                        }
+                    }
+                    .card:hover{
+                        box-shadow: 0 0 15px rgba(33,33,33,.2); 
                     }
                 }
             }
         }
-        #who-what-how {
-            div {
-                article {
-                    div {
-                        background-color: $containerColor-25;
-                        div {
-                            border-left: rgba(38, 89, 1, 0.5) solid 10px;
-                        }
+        .title {
+            background-color: map-get($map:$colors,$key:'titleBackground');
+            color: white;
+            padding: 2rem;
+        }
+        .myContainer {
+            background-color: map-get($map:$colors,$key:'containerColor-25');
+        }
+        form{
+            fieldset{
+                #formButtons{
+                    .myButton--rounded{
+                        @extend .myButton;
+                        border-radius: 1rem;
+                        color:white;
                     }
                 }
             }
         }
     }
+}
+
+footer {
+    #separator {
+        background-color: rgba(38, 89, 1, 0.5);
+        color: white;
+        padding: 1rem 0 1rem 0;
+    }
+    #social-networks {
+        div {
+            a {
+                img {
+                    animation-name: twist;
+                    animation-duration: 8s;
+                    animation-iteration-count: infinite;
+                }
+            }
+        }
+    }
+    #credits {
+        article {
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+//Media queries
+@media only screen and (max-width: 768px) {
+#iframe1,
+#iframe2 {
+    height: 400px;
+}
 }
