@@ -1,7 +1,7 @@
 {
-  "name": "desafio6",
+  "name": "desafio7",
   "version": "1.0.0",
-  "description": "desafio6-webdevelopment",
+  "description": "desafio7-webdevelopment",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicolasbolcatto/desafio-6.git"
+    "url": "git+https://github.com/nicolasbolcatto/desafio-7.git"
   },
   "keywords": [
     "sass",
@@ -19,9 +19,9 @@
   "author": "nicobolcatto",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nicolasbolcatto/desafio-6/issues"
+    "url": "https://github.com/nicolasbolcatto/desafio-7/issues"
   },
-  "homepage": "https://github.com/nicolasbolcatto/desafio-6#readme",
+  "homepage": "https://github.com/nicolasbolcatto/desafio-7#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"
