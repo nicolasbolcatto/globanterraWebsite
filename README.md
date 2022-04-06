@@ -19,12 +19,8 @@ The following languages, platforms and technologies are included in the project:
 - Bootstrap 5
 - SCSS
 - SEO Optimization
-
-Still to implement:
-
-- Image and logo optimization
-- 404 Page
-- Contact form functionality
+- 404 Error Page
+- Form functionality with Formspree
 
 # Functionality
 
@@ -32,4 +28,4 @@ The website allows visitors to read about GlobanTerra’s services, watch videos
 and get to know the members of the team.
 
 As stated earlier, GlobanTerra’s website does not include Javascript functionality so far.
-Nevertheless, it includes a contact form that will be functional in a future stage of the project, allowing to create a database of potential clients.
+Nevertheless, it includes a contact form that is functional with the use of Formspree, allowing to create a database of potential clients. It will be given functionality with JS soon.
