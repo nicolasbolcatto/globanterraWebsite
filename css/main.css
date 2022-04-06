@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-size: 62.5%; }
 
-.myButton, nav #navContainer #navbarNavAltMarkup #navbar a .myButton--rounded, body main form fieldset #formButtons .myButton--rounded {
+.myButton, nav #navContainer #navbarNavAltMarkup #navbar a .myButton--rounded, body main form fieldset #formButtons .myButton--rounded, #error-body .myButton--rounded {
   background-color: rgba(38, 89, 1, 0.5);
   margin: 1rem;
   padding: 1rem; }
@@ -25,6 +25,22 @@
 @keyframes beat {
   to {
     transform: scale(0.9); } }
+
+@keyframes drone-404 {
+  0% {
+    transform: translate(0px, 50px); }
+  10% {
+    transform: translate(100px, -10px); }
+  20% {
+    transform: translate(100px, 50px); }
+  40% {
+    transform: translate(100px); }
+  50% {
+    transform: rotate(180deg); }
+  60% {
+    transform: rotate(0deg); }
+  100% {
+    transform: translateY(40px); } }
 
 header div a img {
   width: 200px;
@@ -100,3 +116,24 @@ footer #credits article a {
   #iframe1,
   #iframe2 {
     height: 400px; } }
+
+#error-body .row .col img {
+  animation: drone-404 15s infinite ease-in-out; }
+
+#error-body .myButton--rounded {
+  border-radius: 1rem;
+  color: white; }
+  #error-body .myButton--rounded:hover {
+    background-color: #005299;
+    cursor: pointer;
+    transform: scale(105%);
+    transition: transform 0.7s; }
+
+#error-body #cred-drone-logo {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: white;
+  font-weight: bold; }
