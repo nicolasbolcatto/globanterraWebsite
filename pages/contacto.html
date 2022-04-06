@@ -89,14 +89,14 @@
         </div>
 
         <!--Contact form starts-->
-        <form action="/action_page.php">
+        <form action="https://formspree.io/f/xjvlejej" method="POST">
             <div class="row">
                 <div class="border col-md-6 col-lg-4">
                     <fieldset class="px-3" id="personal-data">
                         <legend class="ps-2 my-3 fw-bold display-6">Datos personales</legend>
-                        <input type="text" class="my-2 fs-2 form-control" id="name" placeholder="Nombre">
-                        <input type="text" class="my-2 fs-2 form-control" id="surname" placeholder="Apellido">
-                        <input type="email" class="my-2 fs-2 form-control" id="formControlInput" placeholder="Email">
+                        <input type="text" name="name" class="my-2 fs-2 form-control" id="name" placeholder="Nombre">
+                        <input type="text" name="surname" class="my-2 fs-2 form-control" id="surname" placeholder="Apellido">
+                        <input type="email" name="email" class="my-2 fs-2 form-control" id="formControlInput" placeholder="Email">
                     </fieldset>
                     <fieldset class="py-3 px-3" id="location">
                         <legend class="my-3 fw-bold display-6">Provincia</legend>
@@ -132,27 +132,27 @@
                     <fieldset class="px-3" id="interest-area">
                         <legend class="my-3 fw-bold display-6">Área de interés</legend>
                         <div class="fs-1 form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="aerial-mapping">
+                            <input class="form-check-input" name="aerial-mapping" type="checkbox" value="" id="aerial-mapping">
                             <label class="fs-1 form-check-label" for="aerial-mapping">Aerial Mapping</label>
                         </div>
                         <div class="fs-1 form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="control">
+                            <input class="form-check-input" name="control" type="checkbox" value="" id="control">
                             <label class="fs-1 form-check-label" for="control">Certificación de obras</label>
                         </div>
                         <div class="fs-1 form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="topo">
+                            <input class="form-check-input" name="topo" type="checkbox" value="" id="topo">
                             <label class="fs-1 form-check-label" for="topo">Topografía</label>
                         </div>
                         <div class="fs-1 form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="inventario">
+                            <input class="form-check-input" name="inventario" type="checkbox" value="" id="inventario">
                             <label class="fs-1 form-check-label" for="inventario">Inventario de obras viales y ferroviarias</label>
                         </div>
                         <div class="fs-1 form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="sig">
+                            <input class="form-check-input" name="sig" type="checkbox" value="" id="sig">
                             <label class="fs-1 form-check-label" for="sig">Sistemas de Información Geográfica</label>
                         </div>
                         <div class="fs-1 form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="satelital">
+                            <input class="form-check-input" name="satelital" type="checkbox" value="" id="satelital">
                             <label class="fs-1 form-check-label" for="satelital">Procesamiento Satelital</label>
                         </div>
                     </fieldset>
@@ -186,7 +186,7 @@
                         </div>
                         <div class="fs-1 mb-3 form-check">
                             <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 50px;width: 300px;"></textarea>
+                                <textarea class="form-control" name="other" placeholder="Leave a comment here" id="floatingTextarea" style="height: 50px;width: 300px;"></textarea>
                             </div>
                         </div>
                     </fieldset>
@@ -195,7 +195,7 @@
                     <fieldset class="px-3" id="text-message">
                         <div class="h-100 form-floating">
                             <legend class="my-3 fw-bold display-6">Dejanos tu mensaje</legend>
-                            <textarea class="my-3 form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 280px;font-size: 2rem;"></textarea>
+                            <textarea class="my-3 form-control" name="message" placeholder="Leave a comment here" id="floatingTextarea" style="height: 280px;font-size: 2rem;"></textarea>
                         </div>
                     </fieldset>
                 </div>
@@ -203,7 +203,7 @@
             
             <fieldset class="container-fluid px-3" id="send-button">
                 <div id="formButtons" class="text-center">
-                <button type="button" class="myButton--rounded fw-bold fs-2 mx-5 px-5 py-2 btn btn-lg">Enviar</button>
+                <button type="submit" class="myButton--rounded fw-bold fs-2 mx-5 px-5 py-2 btn btn-lg">Enviar</button>
                 <button type="button" class="myButton--rounded fw-bold fs-2 mx-5 px-5 py-2 btn btn-lg">Cancelar</button>
                 </div>
             </fieldset>
