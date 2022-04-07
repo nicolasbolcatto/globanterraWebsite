@@ -117,23 +117,23 @@ footer #credits article a {
   #iframe2 {
     height: 400px; } }
 
-#error-body .row .col img {
-  animation: drone-404 15s infinite ease-in-out; }
-
-#error-body .myButton--rounded {
-  border-radius: 1rem;
-  color: white; }
-  #error-body .myButton--rounded:hover {
-    background-color: #005299;
-    cursor: pointer;
-    transform: scale(105%);
-    transition: transform 0.7s; }
-
-#error-body #cred-drone-logo {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-decoration: none;
-  color: white;
-  font-weight: bold; }
+#error-body {
+  height: 100vh; }
+  #error-body .row .col img {
+    animation: drone-404 10s infinite ease-in-out; }
+  #error-body .myButton--rounded {
+    border-radius: 1rem;
+    color: white; }
+    #error-body .myButton--rounded:hover {
+      background-color: #005299;
+      cursor: pointer;
+      transform: scale(105%);
+      transition: transform 0.7s; }
+  #error-body #cred-drone-logo {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: white;
+    font-weight: bold; }
