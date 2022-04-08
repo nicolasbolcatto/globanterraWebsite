@@ -18,6 +18,9 @@ header {
 nav {
     background-color: map-get($map: $colors, $key: 'containerColor-25');
     #navContainer {
+        button {
+            background-color: map-get($map: $colors, $key: 'containerColor-50');
+        }
         #navbarNavAltMarkup {
             #navbar {
                 a {
@@ -45,6 +48,7 @@ nav {
 }
 
 body {
+    overflow-x: hidden;
     background: map-get($map: $colors, $key: 'backgroundGradient');
     main {
         #carousel {
@@ -141,6 +145,21 @@ footer {
     #iframe1,
     #iframe2 {
         height: 400px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        div {
+            a {
+                img {
+                    width: 100px;
+                }
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+        }
     }
 }
 

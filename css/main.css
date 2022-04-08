@@ -54,6 +54,8 @@ header div a h1 {
 
 nav {
   background-color: rgba(38, 89, 1, 0.25); }
+  nav #navContainer button {
+    background-color: rgba(38, 89, 1, 0.5); }
   nav #navContainer #navbarNavAltMarkup #navbar a {
     text-decoration: none; }
     nav #navContainer #navbarNavAltMarkup #navbar a .myButton--rounded {
@@ -73,6 +75,7 @@ nav {
           color: white; }
 
 body {
+  overflow-x: hidden;
   background: radial-gradient(rgba(0, 82, 153, 0.5), white); }
   body main #carousel #carouselWithCaptions #carousel-inner .carousel-item .carousel-caption {
     background-color: rgba(38, 89, 1, 0.25);
@@ -116,6 +119,12 @@ footer #credits article a {
   #iframe1,
   #iframe2 {
     height: 400px; } }
+
+@media only screen and (max-width: 768px) {
+  header div a img {
+    width: 100px; }
+  header div a h1 {
+    font-size: 3rem; } }
 
 #error-body {
   height: 100vh; }
