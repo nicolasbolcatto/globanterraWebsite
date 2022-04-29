@@ -84,9 +84,9 @@ body {
                         .card-body {
                             border-left: rgba(38, 89, 1, 0.5) solid 10px;
                         }
-                    }
-                    .card:hover {
-                        box-shadow: 0 0 15px rgba(33, 33, 33, .2);
+                        &:hover {
+                            box-shadow: 0 0 15px rgba(33, 33, 33, .2);
+                        }
                     }
                 }
             }
@@ -123,6 +123,7 @@ footer {
         div {
             a {
                 img {
+                    width: 7rem;
                     animation-name: twist;
                     animation-duration: 8s;
                     animation-iteration-count: infinite;
@@ -146,9 +147,6 @@ footer {
     #iframe2 {
         height: 400px;
     }
-}
-
-@media only screen and (max-width: 768px) {
     header {
         div {
             a {

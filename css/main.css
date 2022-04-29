@@ -89,8 +89,8 @@ body {
     background-color: rgba(38, 89, 1, 0.1); }
     body main #who-what-how .row article .card .card-body {
       border-left: rgba(38, 89, 1, 0.5) solid 10px; }
-  body main #who-what-how .row article .card:hover {
-    box-shadow: 0 0 15px rgba(33, 33, 33, 0.2); }
+    body main #who-what-how .row article .card:hover {
+      box-shadow: 0 0 15px rgba(33, 33, 33, 0.2); }
   body main .title {
     background-color: rgba(38, 89, 1, 0.5);
     color: white;
@@ -107,6 +107,7 @@ footer #separator {
   padding: 1rem 0 1rem 0; }
 
 footer #social-networks div a img {
+  width: 7rem;
   animation-name: twist;
   animation-duration: 8s;
   animation-iteration-count: infinite; }
@@ -118,9 +119,7 @@ footer #credits article a {
 @media only screen and (max-width: 768px) {
   #iframe1,
   #iframe2 {
-    height: 400px; } }
-
-@media only screen and (max-width: 768px) {
+    height: 400px; }
   header div a img {
     width: 100px; }
   header div a h1 {

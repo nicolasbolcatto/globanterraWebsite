@@ -5,7 +5,7 @@
 This is my first site as a web developer. It’s a website for drone aerial mapping, land surveying, GIS, and remote sensing startup that I personally manage. The startup’s name is GlobanTerra.
 
 The aim is to build a basic website still without Javascript code for interaction behind the scenes.
-The main goal of the project is to create my first website to complete the Web Development course at [Coderhouse](https://www.coderhouse.com/).
+The main goal of the project was to create my first website to complete the Web Development course at [Coderhouse](https://www.coderhouse.com/).
 
 # Tech Stack
 
